@@ -2,10 +2,20 @@ $cor-fundo: #E8EAF6;
 $cor-primaria: #3F51B5;
 $cor-rod: #C5CAE9;
 
+.container{
+    overflow: hidden;
+    padding: 1%;  
+    text-justify: auto;
+    color: black;
+
+}
+
 @for $i from 1 to 17{
     .col_#{$i}{
         width: ((100%/16) * $i);
         float: left;
+        padding-bottom: 99999px;
+        margin-bottom: -99999px;
     }
 }
 
@@ -13,14 +23,7 @@ $cor-rod: #C5CAE9;
     background-color: $cor-primaria;
 }
 
-.container{
-    overflow: hidden;
-    padding: 1%;  
-    text-justify: auto;
-    color: black;
-    padding-bottom: 99999px;
-    margin-bottom: -99999px;
-}
+
 
 #dadospessoais{
     padding: 5%;
@@ -85,6 +88,8 @@ p{
         .colp_#{$i}{
             width: ((100%/16) * $i);
             float: left;
+            padding-bottom: 99999px;
+            margin-bottom: -99999px;
         }
     }
 }
@@ -94,6 +99,8 @@ p{
         .colm_#{$i}{
             width: ((100%/16) * $i);
             float: left;
+            padding-bottom: 99999px;
+            margin-bottom: -99999px;
         }
     }
 }
@@ -103,6 +110,8 @@ p{
         .colg_#{$i}{
             width: ((100%/16) * $i);
             float: left;
+            padding-bottom: 99999px;
+            margin-bottom: -99999px;
         }
     }
 }
