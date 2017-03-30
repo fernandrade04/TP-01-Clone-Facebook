@@ -1,0 +1,105 @@
+$fonteDestaque: 'Macondo', cursive;
+$fonteComum: Arial;
+
+body{
+    background-color: #FFEF36;
+}
+
+h3 {
+    font-family: $fonteDestaque;
+    align-content: center;
+}
+
+p {
+    font-family: $fonteComum;
+}
+
+.texto {
+    align-content: justify;
+}
+
+.caixa {
+    background: #68E82C;
+    float: left;
+    margin: 1%;
+    border-radius: 10px;
+}
+
+img {
+    color: darken;
+}
+@media screen and (min-width: 960px) {
+    .D3 {
+        width: 15%;
+        text-align: center;
+        float: left;
+    }
+    .D13 {
+        width: 80%;
+        float: left;
+        margin: 1%;
+        float: left;
+    }
+    .DSubCheio {
+        width: 100%;
+        float: left;
+    }
+ }
+ @media screen and (min-width: 648px) and (max-width: 859px) {
+    .T5 {
+        width: 30%;
+        float: left;
+        margin: 1%;
+    }
+    .T11 {
+        width: 60%;
+        float: left;
+        margin: 1%;
+    }
+    .TSubMeio {
+        width: 40%;
+        float: left;
+    }
+ }
+@media screen and (max-width: 647px) {
+    .Mcheio {
+        width: 100%;
+        float: left;
+        margin: 1%;
+    }
+    .MSubCheio{
+        width: 100%;
+        float: left;
+    }
+}
+.subcaixa {
+    background: #39BC96;
+    float: left;
+    margin: 1%;
+    border-radius: 10px;
+}
+
+.MiniCard {
+    float: left;
+    margin: 1%;
+    border-radius: 5px;
+    background-color: #3EBBE8;
+    &:hover {
+        background-color: #A2A4FF;
+    }
+}
+
+.cheio{
+    width: 100%;
+    float: left;
+}
+
+.SubCheio {
+    width: 100%;
+    float: left;
+}
+
+footer {
+    width: 100%;
+    float: left;
+}
