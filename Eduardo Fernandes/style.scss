@@ -1,0 +1,139 @@
+/***FONTES***/
+@import url('https://fonts.googleapis.com/css?family=Roboto:100,300,400,700,900');
+@import url('https://fonts.googleapis.com/css?family=Josefin+Sans:300,400,400i,700,700i');
+
+/***VARIAVEIS***/
+//Cores
+$vermelho: #FF444A;
+$branco: #FFFFFF;
+$cinza: #DADADA;
+$azul: #2B3A4C;
+$preto: #000000;
+
+//Fontes
+$tituloFonte: 'Josefin Sans';
+$paragrafoFonte: 'Roboto';
+
+//Coluna
+$largura-col: 6.25%;
+
+/***ELEMENTOS***/
+#container {
+	overflow: hidden;	
+}
+
+#resumo {
+	background-color: $vermelho;
+}
+
+@mixin estiloTitulos($tamanho, $weight, $padding) {
+	font-family: $tituloFonte, serif;
+	font-weight: $weight;
+	color: $preto;
+	font-size: $tamanho;
+	padding-left: $padding;
+	padding-right: 1%;
+}
+
+@each $titulo, $tamamho, $weight, $padding in (h2, 27px, 300, 10px),
+									 		  (h3, 24px, 300, 0px),
+									 		  (h4, 20px, 300, 0px) {
+	#{$titulo} {
+		@include estiloTitulos($tamamho, $weight, $padding);
+	}							
+}
+
+img {
+	width: 100%;
+	filter: contrast(150%);
+}
+
+span {
+	background-color: $azul;
+	padding: 7px;
+	color: $branco;
+}
+
+#resumo {
+	ul {
+		padding-left: 12px;
+		
+		i {
+			padding-right: 10px;
+			padding-left: -50px;
+			margin-left: 0px;
+		}
+
+		li {
+			font-family: $tituloFonte, serif;
+			font-weight: 300;
+			font-size: 19px;
+		}
+	}
+}
+
+#textoPessoal {
+	padding-left: 10px;
+	padding-top: 5px;
+}
+
+#experiencia, #educacao, #conhecimento {
+	h2, ul {
+		padding-left: 0px;
+	}
+
+	h2 {
+		font-weight: 900;
+	}
+}
+
+p {
+	font-family: $paragrafoFonte, serif;
+	font-weight: 300;
+	text-align: justify;
+	padding-right: 10px;
+	font-size: 16px;
+}
+
+
+/***LAYOUT RESPONSIVO***/
+//Styles das colunas
+@mixin column_style($i) {
+	float: left;
+	//display: inline-block;
+	margin: auto;
+	margin-left: 2%;
+	margin-right: 2%;
+	padding-bottom: 323232px;
+	margin-bottom: -323232px;
+
+	border: 0px solid black;
+	border-radius: 2px;
+	background-color: $branco;
+
+	width: ($largura-col * $i) - 5%;
+}
+
+//Chama styles
+@mixin multiple_column_size($size) {
+	@for $i from 1 to 17 {
+		.col_#{$size}#{$i} {
+			@include column_style($i);
+		}
+	}
+}
+
+/*TELA GRANDE*/
+@media screen and (min-width: 960px) {
+	@include multiple_column_size(l);
+}
+
+/*TELA MEDIA*/
+@media screen and (min-width: 648px) and (max-width: 959px) {
+	@include multiple_column_size(m);
+}
+
+/*TELA PEQUENA*/
+@media screen and (max-width: 647px) {
+	@include multiple_column_size(s);
+}
