@@ -1,12 +1,12 @@
 body {
   background-color: #FFEF36; }
 
-h3 {
+h2, h3 {
   font-family: "Macondo", cursive;
   align-content: center; }
 
-p {
-  font-family: Arial; }
+p, li {
+  font-family: "Lato", sans-serif; }
 
 .texto {
   align-content: justify; }
@@ -18,13 +18,16 @@ p {
   border-radius: 10px; }
 
 img {
-  color: darken; }
+  color: darken;
+  border-radius: 10px;
+  margin: 3px;
+  float: left; }
 
 @media screen and (min-width: 960px) {
   .D3 {
     width: 15%;
-    text-align: center;
-    float: left; }
+    float: left;
+    align-content: center; }
 
   .D13 {
     width: 80%;
@@ -35,7 +38,7 @@ img {
   .DSubCheio {
     width: 100%;
     float: left; } }
-@media screen and (min-width: 648px) and (max-width: 859px) {
+@media screen and (min-width: 648px) and (max-width: 959px) {
   .T5 {
     width: 30%;
     float: left;
@@ -47,7 +50,7 @@ img {
     margin: 1%; }
 
   .TSubMeio {
-    width: 40%;
+    width: 45%;
     float: left; } }
 @media screen and (max-width: 647px) {
   .Mcheio {
@@ -61,16 +64,19 @@ img {
 .subcaixa {
   background: #39BC96;
   float: left;
-  margin: 1%;
+  margin: 5px;
   border-radius: 10px; }
 
 .MiniCard {
   float: left;
-  margin: 1%;
+  width: 100%;
+  margin: 5px;
   border-radius: 5px;
-  background-color: #3EBBE8; }
+  background-color: blue;
+  text-align: center; }
   .MiniCard:hover {
-    background-color: #A2A4FF; }
+    background-color: rebeccapurple;
+    transform: scale(1.1, 1.1); }
 
 .cheio {
   width: 100%;
