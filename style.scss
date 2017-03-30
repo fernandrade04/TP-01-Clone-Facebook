@@ -1,0 +1,109 @@
+$cor-fundo: #E8EAF6;
+$cor-primaria: #3F51B5;
+$cor-rod: #C5CAE9;
+
+@for $i from 1 to 17{
+    .col_#{$i}{
+        width: ((100%/16) * $i);
+        float: left;
+    }
+}
+
+#resumo{
+    background-color: $cor-primaria;
+}
+
+.container{
+    overflow: hidden;
+    padding: 1%;  
+    text-justify: auto;
+    color: black;
+    padding-bottom: 99999px;
+    margin-bottom: -99999px;
+}
+
+#dadospessoais{
+    padding: 5%;
+    font-family: 'Cinzel', serif;
+}
+
+#texto-eu{
+    padding: 5%;
+    padding-top: 0%;
+}
+
+#principal{
+    background-color: $cor-fundo;
+}
+
+#ttext{
+    font-family: 'Cinzel', serif;
+}
+
+img{
+    display: block;
+    width: 100%;
+}
+
+p{
+    word-wrap: break-word;
+}
+
+#rodape{
+    background-color: $cor-rod;
+}
+
+@keyframes efeito{
+	from{
+		opacity: 0.0;
+	}
+	to{
+		opacity: 1;
+	}
+}
+
+@mixin animation($scale){
+	-webkit-transform: $scale;
+	-ms-transform: $scale;
+	transform: $scale;
+}
+
+@mixin transition($tra){
+	-webkit-transition: $tra;
+	-ms-transition: $tra;
+	transition: $tra;
+}
+
+@mixin border-r($br){
+	-webkit-border-radius: $br;
+	-ms-border-radius: $br;
+	border-radius: $br;
+}
+
+@media screen and (max-width: 647px){
+    @for $i from 1 to 17{
+        .colp_#{$i}{
+            width: ((100%/16) * $i);
+            float: left;
+        }
+    }
+}
+
+@media screen and (min-width: 648px) and (max-width: 1049px){
+    @for $i from 1 to 17{
+        .colm_#{$i}{
+            width: ((100%/16) * $i);
+            float: left;
+        }
+    }
+}
+
+@media screen and (min-width: 1050px){
+    @for $i from 1 to 17{
+        .colg_#{$i}{
+            width: ((100%/16) * $i);
+            float: left;
+        }
+    }
+}
+
