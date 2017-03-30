@@ -1,0 +1,97 @@
+p{
+    font-family: 'Slabo 27px', serif;
+}
+
+@for $i from 1 to 5{
+    h#{$i}{
+        font-family: 'Montserrat', sans-serif;
+    }
+}
+
+body{
+    overflow: hidden;
+}
+// COLUNAS
+
+// smartphone
+@media screen and (max-width: 647px){    
+    @for $i from 1 to 16{
+        .col_t#{$i}{
+            width: 2%*$i + 4.25%*$i;
+            float: left;
+            padding: 1%;
+            padding-bottom: 4242px;
+            margin-bottom: -4242px; 
+        }
+    }
+}
+
+//tablet
+@media screen and (max-width: 959px) and  (min-width: 648px){
+    @for $i from 1 to 16{
+        .col_m#{$i}{
+            width: 2%*$i + 4.25%*$i;
+            float: left;
+            padding: 1%;
+            padding-bottom: 4242px;
+            margin-bottom: -4242px;
+        }
+    }
+}
+
+// desktop
+@for $i from 1 to 16{
+    .col_l#{$i}{
+        width: 2%*$i + 4.25%*$i;
+        float: left;
+        padding: 1%;
+        padding-bottom: 4242px;
+        margin-bottom: -4242px;
+    }
+}
+
+
+// RESUMO
+#resumo{
+    background-color: #9BFFC4;
+    overflow: hidden;
+}
+
+@mixin efeito(){
+    -webkit-filter: grayscale(50%);
+    filter: grayscale(50%);
+}
+
+#nome{
+    text-align: center;
+}
+
+#foto{
+    @include efeito();
+    width: 100%;
+}
+
+#dados_pessoais{
+    text-align: center;
+    font-size: 80%;
+}
+
+// DATAS
+
+#antes_atual{
+    display: inline;
+    margin-top: -3%;
+}
+
+#atual{
+    display: inline;
+    background-color: #F3D944;
+    padding: 3px;
+    margin-top: -3%;
+}
+
+// PRINCIPAL
+
+#principal{
+    background-color: blue;
+}
