@@ -11,11 +11,16 @@ p{
 body{
     overflow: hidden;
 }
+
+.titulo{
+    text-align: center;
+}
+
 // COLUNAS
 
 // smartphone
 @media screen and (max-width: 647px){    
-    @for $i from 1 to 16{
+    @for $i from 1 to 17{
         .col_t#{$i}{
             width: 2%*$i + 4.25%*$i;
             float: left;
@@ -28,7 +33,7 @@ body{
 
 //tablet
 @media screen and (max-width: 959px) and  (min-width: 648px){
-    @for $i from 1 to 16{
+    @for $i from 1 to 17{
         .col_m#{$i}{
             width: 2%*$i + 4.25%*$i;
             float: left;
@@ -40,7 +45,7 @@ body{
 }
 
 // desktop
-@for $i from 1 to 16{
+@for $i from 1 to 17{
     .col_l#{$i}{
         width: 2%*$i + 4.25%*$i;
         float: left;
@@ -80,18 +85,16 @@ body{
 
 #antes_atual{
     display: inline;
-    margin-top: -3%;
 }
 
 #atual{
     display: inline;
     background-color: #F3D944;
     padding: 3px;
-    margin-top: -3%;
 }
 
 // PRINCIPAL
 
 #principal{
-    background-color: blue;
+    background-color: #E5E5E5;
 }

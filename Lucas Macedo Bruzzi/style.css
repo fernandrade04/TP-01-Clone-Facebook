@@ -16,6 +16,9 @@ h4 {
 body {
   overflow: hidden; }
 
+.titulo {
+  text-align: center; }
+
 @media screen and (max-width: 647px) {
   .col_t1 {
     width: 6.25%;
@@ -117,6 +120,13 @@ body {
 
   .col_t15 {
     width: 93.75%;
+    float: left;
+    padding: 1%;
+    padding-bottom: 4242px;
+    margin-bottom: -4242px; }
+
+  .col_t16 {
+    width: 100%;
     float: left;
     padding: 1%;
     padding-bottom: 4242px;
@@ -222,6 +232,13 @@ body {
 
   .col_m15 {
     width: 93.75%;
+    float: left;
+    padding: 1%;
+    padding-bottom: 4242px;
+    margin-bottom: -4242px; }
+
+  .col_m16 {
+    width: 100%;
     float: left;
     padding: 1%;
     padding-bottom: 4242px;
@@ -331,6 +348,13 @@ body {
   padding-bottom: 4242px;
   margin-bottom: -4242px; }
 
+.col_l16 {
+  width: 100%;
+  float: left;
+  padding: 1%;
+  padding-bottom: 4242px;
+  margin-bottom: -4242px; }
+
 #resumo {
   background-color: #9BFFC4;
   overflow: hidden; }
@@ -348,16 +372,14 @@ body {
   font-size: 80%; }
 
 #antes_atual {
-  display: inline;
-  margin-top: -3%; }
+  display: inline; }
 
 #atual {
   display: inline;
   background-color: #F3D944;
-  padding: 3px;
-  margin-top: -3%; }
+  padding: 3px; }
 
 #principal {
-  background-color: blue; }
+  background-color: #E5E5E5; }
 
 /*# sourceMappingURL=style.css.map */
