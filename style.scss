@@ -1,0 +1,222 @@
+@import url('https://fonts.googleapis.com/css?family=Dosis');
+@import url('https://fonts.googleapis.com/css?family=Josefin+Sans');
+
+    $font1 :'Dosis', sans-serif;
+    $font2: 'Josefin Sans', sans-serif;
+    $c1: #261818;
+    $c2:#F2F2F2;
+    $c3:#F2E0D0;
+    $c4: #8C6C5A;
+    $c5: #593F36;
+    $white: white;
+    $black-color: black;
+
+    $larguraColuna: 10%;
+
+            @mixin ColumnStyle ($x) {
+                float: left;
+                padding: 1%;
+
+                width: ($larguraColuna * $x) - 5%;
+               
+                
+            }
+
+            @mixin multipleColumnSize ($size) {
+
+                @for $j from 1 to 17 {
+                    .#{$size}#{$j} {
+                        @include ColumnStyle($j); 
+                    }
+                }
+            }
+
+             @media screen and (min-width: 960px) {
+
+                @include multipleColumnSize(l);
+             }
+
+             @media screen and (min-width: 648px) and (max-width: 959px)  {
+
+                 @include multipleColumnSize(m);
+             }
+
+             @media screen and (min-width: 0px) and (max-width: 647px)   {
+
+                 @include multipleColumnSize(p);
+             }
+
+             @mixin border-radius($radius) {
+                -webkit-border-radius: $radius; 
+                -moz-border-radius: $radius; 
+                -ms-border-radius: $radius;
+                border-radius: $radius;  
+            }
+
+
+             body {
+                background-color: $c1;
+                padding-left: 5%;
+                padding-right: 5%;
+             }
+
+             #container1 {
+                 width: 15%;
+                 margin: auto;
+                 padding-bottom: 99999px;
+                 margin-bottom: -99999px;
+                 background-color: $c5;
+                 @include border-radius (10px);
+                 
+
+             }
+
+             img {
+                 width: 90%;
+                 height: 90%;
+                 display: block;
+                 margin: 0 auto;
+                 padding: 2%;
+                 -webkit-filter: grayscale(100%); 
+                 filter: grayscale(100%);
+                 @include border-radius (10px);
+             }
+
+             #dados {
+                 background-color: $c4;
+                 color: $white;
+                 position: relative;
+                 text-align: center;
+                 font-family: $font1;
+                 font-size: 18px;
+                 border: 3px solid $black-color;
+                  @include border-radius (10px);
+             }
+
+             #resumo {
+                 background-color: $c4; 
+                 color: $white;
+                 position: relative;
+                 text-align: center;
+                 font-family: $font1;
+                 font-size: 18px;
+                 border: 3px solid $black-color;
+                  @include border-radius (10px);
+
+             }
+
+             .container2 {
+                 width: 80%;
+                 margin: auto;
+                 padding-bottom: 99999px;
+                 margin-bottom: -99999px;
+                 background-color: $c5;
+                 @include border-radius (10px);
+                 
+             }
+
+             #experiencias {
+                 background-color: $c3;
+                 color: $black-color;
+                 position: relative;
+                 text-align: left;
+                 font-family: $font1;
+                 font-size: 18px;
+                 border: 3px solid $black-color;
+                @include border-radius (10px);
+             }
+
+             #titex {
+                font-family: $font2;
+                position: relative;
+                text-align: center;
+                font-size: 18px;
+
+             }
+
+             #anoex {
+                font-family: $font2;
+                position: relative;
+                text-align: center;
+                font-size: 18px;
+             }
+
+            #atualex {
+                font-family: $font2;
+                position: relative;
+                text-align: center;
+                font-size: 18px;
+                color: salmon;
+
+            }
+
+             #educacao{
+                 background-color: $c3;
+                 color: $black-color;
+                 position: relative;
+                 text-align: center;
+                 font-family: $font1;
+                 font-size: 18px;
+                 border: 3px solid $black-color;
+                @include border-radius (10px);
+             }
+             
+             #conhecimentos {
+                 background-color: $c3;
+                 color: $black-color;
+                 position: relative;
+                 text-align: center;
+                 font-family: $font1;
+                 font-size: 18px;
+                 border: 3px solid $black-color;
+                @include border-radius (10px);
+
+             }
+
+             @mixin transform($deg) {
+                transform: rotate($deg);
+                -webkit-transform: rotate($deg);
+                -moz-transform: rotate($deg);
+                -ms-transform: rotate($deg);
+             }
+             
+             @mixin transition($t) {
+                transition: width $t, height $t, transform $t;
+                -webkit-transition: width $t, height $t, -webkit-transform $t;
+                -moz-transition: width $t, height $t, -moz-transform $t;
+                -ms-transition: width $t, height $t, -ms-transform $t;
+
+
+            }
+
+             .con {
+                 font-family: $font2;
+                 position: relative;
+                 @include transition(2s); 
+        
+
+                 &:hover 
+                    {
+                        @include transform(360deg);
+                    }
+
+
+             }
+             
+
+
+             i{
+                 width: 10px;
+                 height: 10px; 
+             }
+
+             footer {
+                 background-color: $c2;
+                 color: $black-color;
+                 @include border-radius (10px);
+                 width: 100%;
+                 clear: both;
+                 font-size: 20px;
+                 padding-top: 2%;
+             }
+

@@ -1,0 +1,396 @@
+@import url("https://fonts.googleapis.com/css?family=Dosis");
+@import url("https://fonts.googleapis.com/css?family=Josefin+Sans");
+@media screen and (min-width: 960px) {
+  .l1 {
+    float: left;
+    padding: 1%;
+    width: 5%; }
+
+  .l2 {
+    float: left;
+    padding: 1%;
+    width: 15%; }
+
+  .l3 {
+    float: left;
+    padding: 1%;
+    width: 25%; }
+
+  .l4 {
+    float: left;
+    padding: 1%;
+    width: 35%; }
+
+  .l5 {
+    float: left;
+    padding: 1%;
+    width: 45%; }
+
+  .l6 {
+    float: left;
+    padding: 1%;
+    width: 55%; }
+
+  .l7 {
+    float: left;
+    padding: 1%;
+    width: 65%; }
+
+  .l8 {
+    float: left;
+    padding: 1%;
+    width: 75%; }
+
+  .l9 {
+    float: left;
+    padding: 1%;
+    width: 85%; }
+
+  .l10 {
+    float: left;
+    padding: 1%;
+    width: 95%; }
+
+  .l11 {
+    float: left;
+    padding: 1%;
+    width: 105%; }
+
+  .l12 {
+    float: left;
+    padding: 1%;
+    width: 115%; }
+
+  .l13 {
+    float: left;
+    padding: 1%;
+    width: 125%; }
+
+  .l14 {
+    float: left;
+    padding: 1%;
+    width: 135%; }
+
+  .l15 {
+    float: left;
+    padding: 1%;
+    width: 145%; }
+
+  .l16 {
+    float: left;
+    padding: 1%;
+    width: 155%; } }
+@media screen and (min-width: 648px) and (max-width: 959px) {
+  .m1 {
+    float: left;
+    padding: 1%;
+    width: 5%; }
+
+  .m2 {
+    float: left;
+    padding: 1%;
+    width: 15%; }
+
+  .m3 {
+    float: left;
+    padding: 1%;
+    width: 25%; }
+
+  .m4 {
+    float: left;
+    padding: 1%;
+    width: 35%; }
+
+  .m5 {
+    float: left;
+    padding: 1%;
+    width: 45%; }
+
+  .m6 {
+    float: left;
+    padding: 1%;
+    width: 55%; }
+
+  .m7 {
+    float: left;
+    padding: 1%;
+    width: 65%; }
+
+  .m8 {
+    float: left;
+    padding: 1%;
+    width: 75%; }
+
+  .m9 {
+    float: left;
+    padding: 1%;
+    width: 85%; }
+
+  .m10 {
+    float: left;
+    padding: 1%;
+    width: 95%; }
+
+  .m11 {
+    float: left;
+    padding: 1%;
+    width: 105%; }
+
+  .m12 {
+    float: left;
+    padding: 1%;
+    width: 115%; }
+
+  .m13 {
+    float: left;
+    padding: 1%;
+    width: 125%; }
+
+  .m14 {
+    float: left;
+    padding: 1%;
+    width: 135%; }
+
+  .m15 {
+    float: left;
+    padding: 1%;
+    width: 145%; }
+
+  .m16 {
+    float: left;
+    padding: 1%;
+    width: 155%; } }
+@media screen and (min-width: 0px) and (max-width: 647px) {
+  .p1 {
+    float: left;
+    padding: 1%;
+    width: 5%; }
+
+  .p2 {
+    float: left;
+    padding: 1%;
+    width: 15%; }
+
+  .p3 {
+    float: left;
+    padding: 1%;
+    width: 25%; }
+
+  .p4 {
+    float: left;
+    padding: 1%;
+    width: 35%; }
+
+  .p5 {
+    float: left;
+    padding: 1%;
+    width: 45%; }
+
+  .p6 {
+    float: left;
+    padding: 1%;
+    width: 55%; }
+
+  .p7 {
+    float: left;
+    padding: 1%;
+    width: 65%; }
+
+  .p8 {
+    float: left;
+    padding: 1%;
+    width: 75%; }
+
+  .p9 {
+    float: left;
+    padding: 1%;
+    width: 85%; }
+
+  .p10 {
+    float: left;
+    padding: 1%;
+    width: 95%; }
+
+  .p11 {
+    float: left;
+    padding: 1%;
+    width: 105%; }
+
+  .p12 {
+    float: left;
+    padding: 1%;
+    width: 115%; }
+
+  .p13 {
+    float: left;
+    padding: 1%;
+    width: 125%; }
+
+  .p14 {
+    float: left;
+    padding: 1%;
+    width: 135%; }
+
+  .p15 {
+    float: left;
+    padding: 1%;
+    width: 145%; }
+
+  .p16 {
+    float: left;
+    padding: 1%;
+    width: 155%; } }
+body {
+  background-color: #261818;
+  padding-left: 5%;
+  padding-right: 5%; }
+
+#container1 {
+  width: 15%;
+  margin: auto;
+  padding-bottom: 99999px;
+  margin-bottom: -99999px;
+  background-color: #593F36;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  border-radius: 10px; }
+
+img {
+  width: 90%;
+  height: 90%;
+  display: block;
+  margin: 0 auto;
+  padding: 2%;
+  -webkit-filter: grayscale(100%);
+  filter: grayscale(100%);
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  border-radius: 10px; }
+
+#dados {
+  background-color: #8C6C5A;
+  color: white;
+  position: relative;
+  text-align: center;
+  font-family: "Dosis", sans-serif;
+  font-size: 18px;
+  border: 3px solid black;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  border-radius: 10px; }
+
+#resumo {
+  background-color: #8C6C5A;
+  color: white;
+  position: relative;
+  text-align: center;
+  font-family: "Dosis", sans-serif;
+  font-size: 18px;
+  border: 3px solid black;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  border-radius: 10px; }
+
+.container2 {
+  width: 80%;
+  margin: auto;
+  padding-bottom: 99999px;
+  margin-bottom: -99999px;
+  background-color: #593F36;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  border-radius: 10px; }
+
+#experiencias {
+  background-color: #F2E0D0;
+  color: black;
+  position: relative;
+  text-align: left;
+  font-family: "Dosis", sans-serif;
+  font-size: 18px;
+  border: 3px solid black;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  border-radius: 10px; }
+
+#titex {
+  font-family: "Josefin Sans", sans-serif;
+  position: relative;
+  text-align: center;
+  font-size: 18px; }
+
+#anoex {
+  font-family: "Josefin Sans", sans-serif;
+  position: relative;
+  text-align: center;
+  font-size: 18px; }
+
+#atualex {
+  font-family: "Josefin Sans", sans-serif;
+  position: relative;
+  text-align: center;
+  font-size: 18px;
+  color: salmon; }
+
+#educacao {
+  background-color: #F2E0D0;
+  color: black;
+  position: relative;
+  text-align: center;
+  font-family: "Dosis", sans-serif;
+  font-size: 18px;
+  border: 3px solid black;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  border-radius: 10px; }
+
+#conhecimentos {
+  background-color: #F2E0D0;
+  color: black;
+  position: relative;
+  text-align: center;
+  font-family: "Dosis", sans-serif;
+  font-size: 18px;
+  border: 3px solid black;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  border-radius: 10px; }
+
+.con {
+  font-family: "Josefin Sans", sans-serif;
+  position: relative;
+  transition: width 2s, height 2s, transform 2s;
+  -webkit-transition: width 2s, height 2s, -webkit-transform 2s;
+  -moz-transition: width 2s, height 2s, -moz-transform 2s;
+  -ms-transition: width 2s, height 2s, -ms-transform 2s; }
+  .con:hover {
+    transform: rotate(360deg);
+    -webkit-transform: rotate(360deg);
+    -moz-transform: rotate(360deg);
+    -ms-transform: rotate(360deg); }
+
+i {
+  width: 10px;
+  height: 10px; }
+
+footer {
+  background-color: #F2F2F2;
+  color: black;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  border-radius: 10px;
+  width: 100%;
+  clear: both;
+  font-size: 20px;
+  padding-top: 2%; }
+
+/*# sourceMappingURL=style.css.map */
