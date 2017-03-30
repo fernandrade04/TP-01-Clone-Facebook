@@ -336,10 +336,6 @@
     padding-bottom: 99999px;
     margin-bottom: -99999px;
     width: 93%; } }
-.todo {
-  background-color: #245C73;
-  text-align: center; }
-
 .container {
   width: 98%;
   margin: 0%;
@@ -348,8 +344,7 @@
   font-family: "Architects Daughter", cursive;
   font-size: 20px;
   -webkit-animation: mymove 4s;
-  animation: mymove 4s;
-  background-color: #DEF7D9; }
+  animation: mymove 4s; }
 
 @-webkit-keyframes mymove {
   0% {
@@ -362,14 +357,16 @@
   100% {
     transform: translateY(0); } }
 p {
+  padding: 1%;
   text-align: left;
-  font-family: 'Muli', sans-serif; }
+  font-family: 'Muli', sans-serif;
+  font-size: 90%;
+  margin: 1%; }
 
 footer {
   text-align: center;
   font-family: "Quicksand", sans-serif;
   font-size: 0.5cm;
-  background-color: #56878C;
   clear: both; }
 
 img {
@@ -380,24 +377,56 @@ img {
   padding: 5px;
   filter: blur(1px); }
 
-.conteudo {
-  margin-left: 25%; }
-
 h2 {
-  font-family: 'Indie Flower', cursive; }
+  font-family: 'Indie Flower', cursive;
+  margin: 1%; }
 
 h3 {
-  font-family: 'Indie Flower', cursive; }
+  font-family: 'Indie Flower', cursive;
+  margin: 1%;
+  padding-top: 3%;
+  font-size: 130%; }
 
-.botao {
+#antes {
+  display: inline; }
+
+#botao {
+  display: inline;
   background-color: #142F69;
-  width: 4%;
-  padding: 1%; }
+  padding: 3px;
+  border: 0px solid;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  border-radius: 10px;
+  position: relative; }
 
-.botao:hover {
+#botao:hover {
   background-color: #0B1569; }
 
+.card {
+  display: inline;
+  background-color: #142F69;
+  padding: 3px;
+  border: 0px solid;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  border-radius: 10px;
+  position: relative; }
+
+.card:hover {
+  background-color: #0B1569;
+  -webkit-transform: scale(1.3);
+  -ms-transform: scale(1.3);
+  transform: scale(1.3); }
+
 .educacao {
-  float: left; }
+  display: block;
+  margin: auto; }
+
+.conhecimento {
+  display: block;
+  margin: auto; }
 
 /*# sourceMappingURL=style.css.map */
