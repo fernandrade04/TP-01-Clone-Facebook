@@ -321,7 +321,7 @@ img {
   position: relative;
   text-align: center;
   font-family: "Dosis", sans-serif;
-  font-size: 18px;
+  font-size: 20px;
   border: 3px solid #593F36;
   -webkit-border-radius: 10px;
   -moz-border-radius: 10px;
@@ -346,26 +346,26 @@ img {
   color: black;
   position: relative;
   text-align: center;
-  font-size: 20px; }
+  font-size: 22px; }
 
 #titex {
   font-family: "Josefin Sans", sans-serif;
   position: relative;
   text-align: center;
-  font-size: 18px; }
+  font-size: 20px; }
 
 #anoex {
   font-family: "Josefin Sans", sans-serif;
   position: relative;
   text-align: center;
-  font-size: 18px;
+  font-size: 20px;
   display: inline; }
 
 #atualex {
   font-family: "Josefin Sans", sans-serif;
   position: relative;
   text-align: center;
-  font-size: 18px;
+  font-size: 20px;
   color: red;
   display: inline;
   font-weight: bold; }
@@ -376,7 +376,7 @@ img {
   position: relative;
   text-align: center;
   font-family: "Dosis", sans-serif;
-  font-size: 18px;
+  font-size: 20px;
   border: 3px solid #593F36;
   -webkit-border-radius: 10px;
   -moz-border-radius: 10px;
@@ -391,7 +391,7 @@ img {
   position: relative;
   text-align: center;
   font-family: "Dosis", sans-serif;
-  font-size: 18px;
+  font-size: 20px;
   border: 3px solid #593F36;
   -webkit-border-radius: 10px;
   -moz-border-radius: 10px;
