@@ -11,6 +11,7 @@ p{
 body{
     //overflow: hidden;
     padding-top: 0%;
+    background-color: #C2C2C2;
 }
 // COLUNAS
 
@@ -84,15 +85,16 @@ body{
     background-color: #F3D944;
     padding: 3px;
     margin-top: -3%;
+    border-radius: 5px;
 }
 
 // PRINCIPAL
 
 #principal{
     background-color: #C997CF;
-    //float: right;
     overflow: hidden; 
     padding-bottom: 15%;
+    padding-left: 5%;
 }
 
 #experiencias{
@@ -113,32 +115,48 @@ body{
     overflow: hidden;
     max-width: 50%;
 }
+ul{
 
-.card{
-    background-color: #53D929;
-    width: 20%;
-    text-align: center;
+    .card{
+        background-color: #53D929;
+        width: 40%;
+        line-height: 0.5%;
+        margin: auto;
+        text-align: center;
+        display: inline-block;
+        margin: 2%;
+        border-radius: 3px;
+    }
+
+    .card:hover{
+        background-color: #F24332;
+        width: 40%;
+        margin: auto;
+        line-height: 0.5%;
+        text-align: center;
+        font-size: 110%;
+        display: inline-block;
+        margin: 2%;
+        border-radius: 3px;
+    }
 }
-
-.card:hover{
-    background-color: #F24332;
-    width: 21%;
-    text-align: center;
-    font-size: 110%;
-}
-
 // RODAPÉ
 
 #footer{
-    background-color: #C9D94E;
+    background-color: #FF922C;
 }
 
 #copyright{
-    background-color: #C9D94E;
+    background-color: #FF922C;
     display: inline;
     margin-left: 10%;
 }
 
 .titulo{
     text-align: center;
+}
+
+#pai{
+    overflow: hidden;
+    margin: auto;
 }
