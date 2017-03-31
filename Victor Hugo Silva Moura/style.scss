@@ -1,0 +1,238 @@
+@import url('https://fonts.googleapis.com/css?family=Macondo|Revalia|Roboto');
+
+/*
+SCSS desenvolvido por Victor Hugo Silva Moura
+Coltec/2017
+*/
+
+/*Variáveis*/
+$cor1: #273D59;
+$cor2: #D9D9D9;
+$cor3: #455D73;
+$cor4: #7097BA;
+$cor5: #21FF92;
+
+$font-color1: white;
+
+$text-align: center;
+
+$fonte1: 'Roboto', sans-serif;
+$fonte2: 'Macondo', cursive;
+$fonte3: 'Revalia', cursive;
+
+/*Design Geral*/
+.container{
+    width: 92%;
+    overflow: hidden;
+    margin: auto; 
+}
+
+.container:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.dados{
+    padding: 3%;
+    padding-bottom: 1%;
+    background-color: $cor1;
+    color: $font-color1;
+    background-origin: padding-box;
+    font-family: $fonte1;
+}
+
+.foto{
+    position: relative;
+}
+
+.nome{
+    position: absolute;
+    bottom: 12px;
+    left: 8px;
+    font-size: 1.5em;
+    font-family: $fonte1;
+    color: $font-color1;
+}
+
+.foto_perfil{
+    width: 100%;
+    filter: blur(1px); 
+    background-color: $cor2;
+    background-origin: border-box;
+    font-family: $fonte1;
+}
+
+.secao{
+    font-family: $fonte3;
+}
+
+.titulo{
+    font-family: $fonte2;
+    font-size: 1.7em;
+}
+
+.data{
+    font-family: $fonte2;
+    font-size: 1.2em;
+}
+
+/*Gerador de Colunas*/
+@for $i from 1 to 17{
+    @if $i == 4{
+        .col#{$i}{
+            width: (($i/16) * 98%);
+            float: left;
+            overflow: auto;
+            background-color: $cor1;
+            padding-bottom: 42424px;
+            margin-bottom: -42424px;
+        }
+    }
+    @else{
+        .col#{$i}{
+            width: (($i/16) * 98%);
+            padding: 1%;
+            float: left;
+            overflow: auto;
+            padding-bottom: 42424px;
+            margin-bottom: -42424px;
+        }
+    }
+}
+
+.col12{
+    background-color: $cor2;
+}
+
+.col_int1{
+    width: 98%;
+    overflow: hidden;
+    margin: auto;
+    float: left;
+    padding: 1%;
+}
+.col_int2{
+    width: 48%;
+    overflow: hidden;
+    margin: auto;
+    float: left;
+    padding: 1%;
+}
+
+
+/*Design Responsivo*/
+@media screen and (min-width: 648px) and (max-width: 959px){
+    @for $i from 1 to 17{
+        @if $i == 6{
+            .tcol#{$i}{
+                width: (($i/16) * 98%);
+                float: left;
+                overflow: auto;
+                background-color: $cor1;
+                padding-bottom: 42424px;
+                margin-bottom: -42424px;
+            }
+        }
+        @else{
+            .tcol#{$i}{
+                width: (($i/16) * 98%);
+                padding: 1%;
+                float: left;
+                overflow: auto;
+                padding-bottom: 42424px;
+                margin-bottom: -42424px;
+            }
+        }
+    }
+
+    .tcol10{
+        background-color: $cor2;
+    }
+
+    .tcol_int1{
+        width: 98%;
+        overflow: hidden;
+        margin: auto;
+        float: left;
+        padding: 1%;
+    }
+}
+
+@media screen and (max-width: 647px){
+    @for $i from 1 to 17{
+        .mcol#{$i}{
+                width: (($i/16) * 98%);
+                padding: 1%;
+                float: left;
+                overflow: auto;
+                padding-bottom: 42424px;
+                margin-bottom: -42424px;
+        }
+    }
+    .mcol_int1{
+        width: 98%;
+        overflow: hidden;
+        margin: auto;
+        float: left;
+        padding: 1%;
+        background-color: $cor2;
+    }
+
+    /*Rodapé*/
+    #footer{
+        padding: 1%;
+        display: block;
+        background-color: $cor5;
+        
+        #icon{
+            padding-right: 1%;
+        }
+        .csign{
+            position: relative;
+            display: block;
+            padding: 2%;
+            font-size: 1.0em;
+        }
+    }
+}
+
+/*Destaques da página*/
+.ling{
+    background-color: $cor3;
+    padding: 1%;
+    transition: 1s;
+    font-size: 1.1em;
+    color: $font-color1;
+}
+
+.ling:hover{
+    background-color: $cor4;
+    transform: scale(1.1, 1.1);
+    font-size: 1.7em;
+}
+
+.atual{
+    background-color: $cor4;
+    padding: 1%;
+    border-radius: 15px;
+}
+
+.sign{
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+    font-size: 1.1em;
+}
+
+/*Rodapé*/
+#footer{
+    padding: 1%;
+    display: block;
+    position: relative;
+    background-color: $cor5;
+    
+    #icon{
+        padding-right: 1%;
+    }
+}

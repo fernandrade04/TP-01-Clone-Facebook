@@ -1,0 +1,523 @@
+@charset "UTF-8";
+@import url("https://fonts.googleapis.com/css?family=Macondo|Revalia|Roboto");
+/*
+SCSS desenvolvido por Victor Hugo Silva Moura
+Coltec/2017
+*/
+/*Variáveis*/
+/*Design Geral*/
+.container {
+  width: 92%;
+  overflow: hidden;
+  margin: auto; }
+
+.container:after {
+  content: "";
+  display: table;
+  clear: both; }
+
+.dados {
+  padding: 3%;
+  padding-bottom: 1%;
+  background-color: #273D59;
+  color: white;
+  background-origin: padding-box;
+  font-family: "Roboto", sans-serif; }
+
+.foto {
+  position: relative; }
+
+.nome {
+  position: absolute;
+  bottom: 12px;
+  left: 8px;
+  font-size: 1.5em;
+  font-family: "Roboto", sans-serif;
+  color: white; }
+
+.foto_perfil {
+  width: 100%;
+  filter: blur(1px);
+  background-color: #D9D9D9;
+  background-origin: border-box;
+  font-family: "Roboto", sans-serif; }
+
+.secao {
+  font-family: "Revalia", cursive; }
+
+.titulo {
+  font-family: "Macondo", cursive;
+  font-size: 1.7em; }
+
+.data {
+  font-family: "Macondo", cursive;
+  font-size: 1.2em; }
+
+/*Gerador de Colunas*/
+.col1 {
+  width: 6.125%;
+  padding: 1%;
+  float: left;
+  overflow: auto;
+  padding-bottom: 42424px;
+  margin-bottom: -42424px; }
+
+.col2 {
+  width: 12.25%;
+  padding: 1%;
+  float: left;
+  overflow: auto;
+  padding-bottom: 42424px;
+  margin-bottom: -42424px; }
+
+.col3 {
+  width: 18.375%;
+  padding: 1%;
+  float: left;
+  overflow: auto;
+  padding-bottom: 42424px;
+  margin-bottom: -42424px; }
+
+.col4 {
+  width: 24.5%;
+  float: left;
+  overflow: auto;
+  background-color: #273D59;
+  padding-bottom: 42424px;
+  margin-bottom: -42424px; }
+
+.col5 {
+  width: 30.625%;
+  padding: 1%;
+  float: left;
+  overflow: auto;
+  padding-bottom: 42424px;
+  margin-bottom: -42424px; }
+
+.col6 {
+  width: 36.75%;
+  padding: 1%;
+  float: left;
+  overflow: auto;
+  padding-bottom: 42424px;
+  margin-bottom: -42424px; }
+
+.col7 {
+  width: 42.875%;
+  padding: 1%;
+  float: left;
+  overflow: auto;
+  padding-bottom: 42424px;
+  margin-bottom: -42424px; }
+
+.col8 {
+  width: 49%;
+  padding: 1%;
+  float: left;
+  overflow: auto;
+  padding-bottom: 42424px;
+  margin-bottom: -42424px; }
+
+.col9 {
+  width: 55.125%;
+  padding: 1%;
+  float: left;
+  overflow: auto;
+  padding-bottom: 42424px;
+  margin-bottom: -42424px; }
+
+.col10 {
+  width: 61.25%;
+  padding: 1%;
+  float: left;
+  overflow: auto;
+  padding-bottom: 42424px;
+  margin-bottom: -42424px; }
+
+.col11 {
+  width: 67.375%;
+  padding: 1%;
+  float: left;
+  overflow: auto;
+  padding-bottom: 42424px;
+  margin-bottom: -42424px; }
+
+.col12 {
+  width: 73.5%;
+  padding: 1%;
+  float: left;
+  overflow: auto;
+  padding-bottom: 42424px;
+  margin-bottom: -42424px; }
+
+.col13 {
+  width: 79.625%;
+  padding: 1%;
+  float: left;
+  overflow: auto;
+  padding-bottom: 42424px;
+  margin-bottom: -42424px; }
+
+.col14 {
+  width: 85.75%;
+  padding: 1%;
+  float: left;
+  overflow: auto;
+  padding-bottom: 42424px;
+  margin-bottom: -42424px; }
+
+.col15 {
+  width: 91.875%;
+  padding: 1%;
+  float: left;
+  overflow: auto;
+  padding-bottom: 42424px;
+  margin-bottom: -42424px; }
+
+.col16 {
+  width: 98%;
+  padding: 1%;
+  float: left;
+  overflow: auto;
+  padding-bottom: 42424px;
+  margin-bottom: -42424px; }
+
+.col12 {
+  background-color: #D9D9D9; }
+
+.col_int1 {
+  width: 98%;
+  overflow: hidden;
+  margin: auto;
+  float: left;
+  padding: 1%; }
+
+.col_int2 {
+  width: 48%;
+  overflow: hidden;
+  margin: auto;
+  float: left;
+  padding: 1%; }
+
+/*Design Responsivo*/
+@media screen and (min-width: 648px) and (max-width: 959px) {
+  .tcol1 {
+    width: 6.125%;
+    padding: 1%;
+    float: left;
+    overflow: auto;
+    padding-bottom: 42424px;
+    margin-bottom: -42424px; }
+
+  .tcol2 {
+    width: 12.25%;
+    padding: 1%;
+    float: left;
+    overflow: auto;
+    padding-bottom: 42424px;
+    margin-bottom: -42424px; }
+
+  .tcol3 {
+    width: 18.375%;
+    padding: 1%;
+    float: left;
+    overflow: auto;
+    padding-bottom: 42424px;
+    margin-bottom: -42424px; }
+
+  .tcol4 {
+    width: 24.5%;
+    padding: 1%;
+    float: left;
+    overflow: auto;
+    padding-bottom: 42424px;
+    margin-bottom: -42424px; }
+
+  .tcol5 {
+    width: 30.625%;
+    padding: 1%;
+    float: left;
+    overflow: auto;
+    padding-bottom: 42424px;
+    margin-bottom: -42424px; }
+
+  .tcol6 {
+    width: 36.75%;
+    float: left;
+    overflow: auto;
+    background-color: #273D59;
+    padding-bottom: 42424px;
+    margin-bottom: -42424px; }
+
+  .tcol7 {
+    width: 42.875%;
+    padding: 1%;
+    float: left;
+    overflow: auto;
+    padding-bottom: 42424px;
+    margin-bottom: -42424px; }
+
+  .tcol8 {
+    width: 49%;
+    padding: 1%;
+    float: left;
+    overflow: auto;
+    padding-bottom: 42424px;
+    margin-bottom: -42424px; }
+
+  .tcol9 {
+    width: 55.125%;
+    padding: 1%;
+    float: left;
+    overflow: auto;
+    padding-bottom: 42424px;
+    margin-bottom: -42424px; }
+
+  .tcol10 {
+    width: 61.25%;
+    padding: 1%;
+    float: left;
+    overflow: auto;
+    padding-bottom: 42424px;
+    margin-bottom: -42424px; }
+
+  .tcol11 {
+    width: 67.375%;
+    padding: 1%;
+    float: left;
+    overflow: auto;
+    padding-bottom: 42424px;
+    margin-bottom: -42424px; }
+
+  .tcol12 {
+    width: 73.5%;
+    padding: 1%;
+    float: left;
+    overflow: auto;
+    padding-bottom: 42424px;
+    margin-bottom: -42424px; }
+
+  .tcol13 {
+    width: 79.625%;
+    padding: 1%;
+    float: left;
+    overflow: auto;
+    padding-bottom: 42424px;
+    margin-bottom: -42424px; }
+
+  .tcol14 {
+    width: 85.75%;
+    padding: 1%;
+    float: left;
+    overflow: auto;
+    padding-bottom: 42424px;
+    margin-bottom: -42424px; }
+
+  .tcol15 {
+    width: 91.875%;
+    padding: 1%;
+    float: left;
+    overflow: auto;
+    padding-bottom: 42424px;
+    margin-bottom: -42424px; }
+
+  .tcol16 {
+    width: 98%;
+    padding: 1%;
+    float: left;
+    overflow: auto;
+    padding-bottom: 42424px;
+    margin-bottom: -42424px; }
+
+  .tcol10 {
+    background-color: #D9D9D9; }
+
+  .tcol_int1 {
+    width: 98%;
+    overflow: hidden;
+    margin: auto;
+    float: left;
+    padding: 1%; } }
+@media screen and (max-width: 647px) {
+  .mcol1 {
+    width: 6.125%;
+    padding: 1%;
+    float: left;
+    overflow: auto;
+    padding-bottom: 42424px;
+    margin-bottom: -42424px; }
+
+  .mcol2 {
+    width: 12.25%;
+    padding: 1%;
+    float: left;
+    overflow: auto;
+    padding-bottom: 42424px;
+    margin-bottom: -42424px; }
+
+  .mcol3 {
+    width: 18.375%;
+    padding: 1%;
+    float: left;
+    overflow: auto;
+    padding-bottom: 42424px;
+    margin-bottom: -42424px; }
+
+  .mcol4 {
+    width: 24.5%;
+    padding: 1%;
+    float: left;
+    overflow: auto;
+    padding-bottom: 42424px;
+    margin-bottom: -42424px; }
+
+  .mcol5 {
+    width: 30.625%;
+    padding: 1%;
+    float: left;
+    overflow: auto;
+    padding-bottom: 42424px;
+    margin-bottom: -42424px; }
+
+  .mcol6 {
+    width: 36.75%;
+    padding: 1%;
+    float: left;
+    overflow: auto;
+    padding-bottom: 42424px;
+    margin-bottom: -42424px; }
+
+  .mcol7 {
+    width: 42.875%;
+    padding: 1%;
+    float: left;
+    overflow: auto;
+    padding-bottom: 42424px;
+    margin-bottom: -42424px; }
+
+  .mcol8 {
+    width: 49%;
+    padding: 1%;
+    float: left;
+    overflow: auto;
+    padding-bottom: 42424px;
+    margin-bottom: -42424px; }
+
+  .mcol9 {
+    width: 55.125%;
+    padding: 1%;
+    float: left;
+    overflow: auto;
+    padding-bottom: 42424px;
+    margin-bottom: -42424px; }
+
+  .mcol10 {
+    width: 61.25%;
+    padding: 1%;
+    float: left;
+    overflow: auto;
+    padding-bottom: 42424px;
+    margin-bottom: -42424px; }
+
+  .mcol11 {
+    width: 67.375%;
+    padding: 1%;
+    float: left;
+    overflow: auto;
+    padding-bottom: 42424px;
+    margin-bottom: -42424px; }
+
+  .mcol12 {
+    width: 73.5%;
+    padding: 1%;
+    float: left;
+    overflow: auto;
+    padding-bottom: 42424px;
+    margin-bottom: -42424px; }
+
+  .mcol13 {
+    width: 79.625%;
+    padding: 1%;
+    float: left;
+    overflow: auto;
+    padding-bottom: 42424px;
+    margin-bottom: -42424px; }
+
+  .mcol14 {
+    width: 85.75%;
+    padding: 1%;
+    float: left;
+    overflow: auto;
+    padding-bottom: 42424px;
+    margin-bottom: -42424px; }
+
+  .mcol15 {
+    width: 91.875%;
+    padding: 1%;
+    float: left;
+    overflow: auto;
+    padding-bottom: 42424px;
+    margin-bottom: -42424px; }
+
+  .mcol16 {
+    width: 98%;
+    padding: 1%;
+    float: left;
+    overflow: auto;
+    padding-bottom: 42424px;
+    margin-bottom: -42424px; }
+
+  .mcol_int1 {
+    width: 98%;
+    overflow: hidden;
+    margin: auto;
+    float: left;
+    padding: 1%;
+    background-color: #D9D9D9; }
+
+  /*Rodapé*/
+  #footer {
+    padding: 1%;
+    display: block;
+    background-color: #21FF92; }
+    #footer #icon {
+      padding-right: 1%; }
+    #footer .csign {
+      position: relative;
+      display: block;
+      padding: 2%;
+      font-size: 1.0em; } }
+/*Destaques da página*/
+.ling {
+  background-color: #455D73;
+  padding: 1%;
+  transition: 1s;
+  font-size: 1.1em;
+  color: white; }
+
+.ling:hover {
+  background-color: #7097BA;
+  transform: scale(1.1, 1.1);
+  font-size: 1.7em; }
+
+.atual {
+  background-color: #7097BA;
+  padding: 1%;
+  border-radius: 15px; }
+
+.sign {
+  position: absolute;
+  bottom: 10px;
+  right: 10px;
+  font-size: 1.1em; }
+
+/*Rodapé*/
+#footer {
+  padding: 1%;
+  display: block;
+  position: relative;
+  background-color: #21FF92; }
+  #footer #icon {
+    padding-right: 1%; }
+
+/*# sourceMappingURL=style.css.map */
