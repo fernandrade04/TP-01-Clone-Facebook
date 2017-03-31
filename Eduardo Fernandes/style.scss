@@ -1,0 +1,249 @@
+/***FONTES***/
+@import url('https://fonts.googleapis.com/css?family=Roboto:100,300,400,500,700,900');
+@import url('https://fonts.googleapis.com/css?family=Josefin+Sans:300,400,400i,700,700i');
+
+/***VARIAVEIS***/
+//Cores
+$vermelho: #FF444A;
+$branco: #FFFFFF;
+$cinza: #DADADA;
+$azul: #2B3A4C;
+$preto: #000000;
+
+//Fontes
+$tituloFonte: 'Josefin Sans';
+$paragrafoFonte: 'Roboto';
+
+//Peso da Fonte
+$h2Peso: 900;
+$h3Peso: 500;
+$h4Peso: 300;
+$pPeso: 100;
+
+//Tamanho da Fonte
+$h2Tam: 30px;
+$h3Tam: 27px;
+$h4Tam: 24px;
+$pTam: 18px;
+
+//Margin-top dos titulos
+$h2MarginTop: 45px;
+$h3MarginTop: 50px;
+$h4MarginTop: 0px;
+$pMarginTop: -10px;
+$liMarginTop: 14px;
+$ulMarginTop: 30px;
+
+//Margin-bottom das coisas
+$ulMarginBottom: 45px;
+
+//Animacao
+$velocidadeAnimacao: background-color 0.3s, color 0.3s;
+
+//Coluna
+$largura-col: 6.25%;
+
+/***ELEMENTOS***/
+@mixin estiloTitulos($tamanho, $weight, $padding, $marginTop) {
+	font-family: $tituloFonte, serif;
+	font-weight: $weight;
+	color: $preto;
+	font-size: $tamanho;
+	padding-left: $padding;
+	padding-right: 1%;
+	margin-top: $marginTop;
+}
+
+@each $titulo, $tamamho, $weight, $padding, $marginTop in (h2, $h2Tam, $h2Peso, 10px, $h2MarginTop),
+									 		  (h3, $h3Tam, $h3Peso, 0px, $h3MarginTop),
+									 		  (h4, $h4Tam, $h4Peso, 0px, $h4MarginTop) {
+	#{$titulo} {
+		@include estiloTitulos($tamamho, $weight, $padding, $marginTop);
+	}							
+}
+
+img {
+	width: 100%;
+	filter: contrast(150%);
+}
+
+p {
+	font-family: $paragrafoFonte, serif;
+	font-weight: $pPeso;
+	text-align: justify;
+	padding-right: 10px;
+	font-size: $pTam;
+	margin-top: $pMarginTop;
+}
+
+span {
+	background-color: $azul;
+	padding: 7px;
+	color: $branco;
+}
+
+#container {
+	overflow: hidden;
+}
+
+#resumo {
+	background-color: $vermelho;
+
+	h2 {
+		font-weight: $h3Peso;
+		font-size: $h3Tam;
+		margin-top: 24px;
+	}
+
+	ul {
+		padding-left: 12px;
+		margin-top: $ulMarginTop;
+		margin-bottom: $ulMarginBottom;
+		
+		i {
+			padding-right: 10px;
+			padding-left: -50px;
+			margin-left: 0px;
+		}
+
+		li {
+			font-family: $tituloFonte, serif;
+			font-weight: $pPeso;
+			font-size: $pTam;
+			margin-top: $liMarginTop;
+		}
+	}
+}
+
+#textoPessoal {
+	padding-left: 10px;
+	padding-top: 5px;
+}
+
+#experiencia, #educacao, #conhecimento, #rodape {
+	h2, ul {
+		padding-left: 0px;
+	}
+
+	h2 {
+		margin-bottom: -15px;
+	}
+}
+
+#experiencia {
+	h2 {
+		margin-top: 24px;
+	}
+}
+
+#educacao {
+	ul {
+		margin-top: 0px;
+	}
+
+	li {
+		margin-top: -10px;
+	}
+}
+
+#conhecimento {
+	h3 {
+		margin-top: $h3MarginTop;
+	}
+
+	ul {
+		li {
+			font-family: $tituloFonte, serif;
+			font-weight: $pPeso;
+			font-size: $pTam;
+			margin-top: $liMarginTop;
+			margin-right: 10px;
+			display: inline-block;
+			background-color: $cinza;
+			text-align: center;
+			padding: 10px;
+
+			-webkit-animation: #{$velocidadeAnimacao};
+			-moz-animation: #{$velocidadeAnimacao};
+			-ms-animation: #{$velocidadeAnimacao};
+			transition: #{$velocidadeAnimacao};
+
+			&:hover {
+				background-color: $azul;
+				color: $branco;
+			}
+		}
+	}
+}
+
+#rodape {
+	background-color: $preto;
+	height: 150px;
+	text-align: center;
+
+	a {
+		color: $branco;
+		font-size: $h2Tam;
+
+		&:hover {
+			color: $vermelho;
+		}
+
+		li {
+			display: inline-block;
+			margin: 40px 15px 15px 0px;
+		}		
+	}
+
+	p {
+		display: inline-block;
+		color: $branco;
+		font-size: $pTam;
+
+		i {
+			font-size: 15px;
+		}
+	}
+}
+
+/***LAYOUT RESPONSIVO***/
+//Styles das colunas
+@mixin column_style($i) {
+	float: left;
+	//display: inline-block;
+	margin: auto;
+	margin-left: 2%;
+	margin-right: 2%;
+	padding-bottom: 323232px;
+	margin-bottom: -323232px;
+
+	border: 0px solid black;
+	border-radius: 2px;
+	background-color: $branco;
+
+	width: ($largura-col * $i) - 5%;
+}
+
+//Chama styles
+@mixin multiple_column_size($size) {
+	@for $i from 1 to 17 {
+		.col_#{$size}#{$i} {
+			@include column_style($i);
+		}
+	}
+}
+
+/*TELA GRANDE*/
+@media screen and (min-width: 960px) {
+	@include multiple_column_size(l);
+}
+
+/*TELA MEDIA*/
+@media screen and (min-width: 648px) and (max-width: 959px) {
+	@include multiple_column_size(m);
+}
+
+/*TELA PEQUENA*/
+@media screen and (max-width: 647px) {
+	@include multiple_column_size(s);
+}
