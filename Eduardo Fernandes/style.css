@@ -1,73 +1,130 @@
 /***FONTES***/
-@import url("https://fonts.googleapis.com/css?family=Roboto:100,300,400,700,900");
+@import url("https://fonts.googleapis.com/css?family=Roboto:100,300,400,500,700,900");
 @import url("https://fonts.googleapis.com/css?family=Josefin+Sans:300,400,400i,700,700i");
 /***VARIAVEIS***/
 /***ELEMENTOS***/
-#container {
-  overflow: hidden; }
-
-#resumo {
-  background-color: #FF444A; }
-
 h2 {
   font-family: "Josefin Sans", serif;
-  font-weight: 300;
+  font-weight: 900;
   color: #000000;
-  font-size: 27px;
+  font-size: 30px;
   padding-left: 10px;
-  padding-right: 1%; }
+  padding-right: 1%;
+  margin-top: 45px; }
 
 h3 {
   font-family: "Josefin Sans", serif;
-  font-weight: 300;
+  font-weight: 500;
   color: #000000;
-  font-size: 24px;
+  font-size: 27px;
   padding-left: 0px;
-  padding-right: 1%; }
+  padding-right: 1%;
+  margin-top: 50px; }
 
 h4 {
   font-family: "Josefin Sans", serif;
   font-weight: 300;
   color: #000000;
-  font-size: 20px;
+  font-size: 24px;
   padding-left: 0px;
-  padding-right: 1%; }
+  padding-right: 1%;
+  margin-top: 0px; }
 
 img {
   width: 100%;
   filter: contrast(150%); }
+
+p {
+  font-family: "Roboto", serif;
+  font-weight: 100;
+  text-align: justify;
+  padding-right: 10px;
+  font-size: 18px;
+  margin-top: -10px; }
 
 span {
   background-color: #2B3A4C;
   padding: 7px;
   color: #FFFFFF; }
 
-#resumo ul {
-  padding-left: 12px; }
-  #resumo ul i {
-    padding-right: 10px;
-    padding-left: -50px;
-    margin-left: 0px; }
-  #resumo ul li {
-    font-family: "Josefin Sans", serif;
-    font-weight: 300;
-    font-size: 19px; }
+#container {
+  overflow: hidden; }
+
+#resumo {
+  background-color: #FF444A; }
+  #resumo h2 {
+    font-weight: 500;
+    font-size: 27px;
+    margin-top: 24px; }
+  #resumo ul {
+    padding-left: 12px;
+    margin-top: 30px;
+    margin-bottom: 45px; }
+    #resumo ul i {
+      padding-right: 10px;
+      padding-left: -50px;
+      margin-left: 0px; }
+    #resumo ul li {
+      font-family: "Josefin Sans", serif;
+      font-weight: 100;
+      font-size: 18px;
+      margin-top: 14px; }
 
 #textoPessoal {
   padding-left: 10px;
   padding-top: 5px; }
 
-#experiencia h2, #experiencia ul, #educacao h2, #educacao ul, #conhecimento h2, #conhecimento ul {
+#experiencia h2, #experiencia ul, #educacao h2, #educacao ul, #conhecimento h2, #conhecimento ul, #rodape h2, #rodape ul {
   padding-left: 0px; }
-#experiencia h2, #educacao h2, #conhecimento h2 {
-  font-weight: 900; }
+#experiencia h2, #educacao h2, #conhecimento h2, #rodape h2 {
+  margin-bottom: -15px; }
 
-p {
-  font-family: "Roboto", serif;
-  font-weight: 300;
-  text-align: justify;
-  padding-right: 10px;
-  font-size: 16px; }
+#experiencia h2 {
+  margin-top: 24px; }
+
+#educacao ul {
+  margin-top: 0px; }
+#educacao li {
+  margin-top: -10px; }
+
+#conhecimento h3 {
+  margin-top: 50px; }
+#conhecimento ul li {
+  font-family: "Josefin Sans", serif;
+  font-weight: 100;
+  font-size: 18px;
+  margin-top: 14px;
+  margin-right: 10px;
+  display: inline-block;
+  background-color: #DADADA;
+  text-align: center;
+  padding: 10px;
+  -webkit-animation: background-color 0.3s, color 0.3s;
+  -moz-animation: background-color 0.3s, color 0.3s;
+  -ms-animation: background-color 0.3s, color 0.3s;
+  transition: background-color 0.3s, color 0.3s; }
+  #conhecimento ul li:hover {
+    background-color: #2B3A4C;
+    color: #FFFFFF; }
+
+#rodape {
+  background-color: #000000;
+  height: 150px;
+  text-align: center; }
+  #rodape a {
+    color: #FFFFFF;
+    font-size: 30px; }
+    #rodape a:hover {
+      color: #FF444A; }
+    #rodape a li {
+      display: inline-block;
+      margin: 40px 15px 15px 0px; }
+  #rodape p {
+    display: inline-block;
+    color: #FFFFFF;
+    font-size: 18px; }
+    #rodape p i {
+      font-size: 15px; }
 
 /***LAYOUT RESPONSIVO***/
 /*TELA GRANDE*/
