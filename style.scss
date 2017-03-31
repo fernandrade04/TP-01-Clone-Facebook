@@ -3,6 +3,7 @@ $cor-texto: #BBDEFB;
 $cor-resumo: #2196F3;
 $cor-primaria: #3F51B5;
 $cor-rod: #1972B9;
+$valorColuna: 6.125%;
 
 .container{
     overflow: hidden;
@@ -27,21 +28,42 @@ body{
 img{
     display: block;
     width: 100%;
-    -webkit-filter: blur(2px);
-    filter: blur(2px);
+    -webkit-filter: brightness(120%);
+    filter: brightness(120%);
 }
 
 p{
     word-wrap: break-word;
 }
 
+li{
+    list-style-type: none;
+    float: left;
+    background-color: white;
+    padding: 2%;
+    margin-right: 2%;
+    border-radius: 10px;
+}
+
+a{
+    color: black;
+}
+
 #resumo{
     background-color: $cor-resumo;
 	font-family: 'Cabin', sans-serif;
+    padding-left: 0%;
+    padding-right: 0%;
 
 }
 
+#projexp{
+    padding-left: 1%;   
+}
 
+#educacao{
+    padding-left: 1%;
+}
 
 #dadospessoais{
     padding: 5%;
@@ -58,6 +80,8 @@ p{
     background-color: $cor-texto;
     text-align: center;
     text-align: justify;
+    padding-right: 0%;
+    padding-left: 0%;
 
 }
 
@@ -68,25 +92,35 @@ p{
 
 #ttext{
 	font-family: 'Cabin', sans-serif;
+    padding-top: 2%;
+}
+
+#text{
+    padding-top: 2%;
 }
 
 #rodape{
     background-color: $cor-rod;
 	font-family: 'Cabin', sans-serif;
-
+    padding-left: 0%;
+    padding-right: 0%;
+    float: left;
 }
+
 
 #list{
 	text-align: center;
 	background-color: white;
 	padding: 1%;
 	margin: 1%;
+    margin-right: 3%;
 	width: 15%;
 	border-radius: 70%;
 }
 
 #finaltext{
     padding: 1%;
+    text-align: center;
 }
 
 
@@ -131,7 +165,7 @@ p{
     @include transition(1s);
     @for $i from 1 to 17{
         .colp_#{$i}{
-            width: ((100%/16) * $i);
+            width: ($valorColuna * $i);
             float: left;
             padding-bottom: 99999px;
             margin-bottom: -99999px;
@@ -143,7 +177,7 @@ p{
     @include transition(1s);
     @for $i from 1 to 17{
         .colm_#{$i}{
-            width: ((100%/16) * $i);
+            width: ($valorColuna * $i);
             float: left;
             padding-bottom: 99999px;
             margin-bottom: -99999px;
@@ -155,7 +189,7 @@ p{
     @include transition(1s);
     @for $i from 1 to 17{
         .colg_#{$i}{
-            width: ((100%/16) * $i);
+            width: ($valorColuna * $i);
             float: left;
             padding-bottom: 99999px;
             margin-bottom: -99999px;
