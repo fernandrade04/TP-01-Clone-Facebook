@@ -2,29 +2,23 @@ p{
     font-family: 'Slabo 27px', serif;
 }
 
-@for $i from 1 to 5{
+@for $i from 1 to 6{
     h#{$i}{
         font-family: 'Montserrat', sans-serif;
     }
 }
 
 body{
-    overflow: hidden;
+    //overflow: hidden;
+    padding-top: 0%;
 }
-
-.titulo{
-    text-align: center;
-}
-
 // COLUNAS
 
 // smartphone
 @media screen and (max-width: 647px){    
     @for $i from 1 to 17{
-        .col_t#{$i}{
+        .col_p#{$i}{
             width: 2%*$i + 4.25%*$i;
-            float: left;
-            padding: 1%;
             padding-bottom: 4242px;
             margin-bottom: -4242px; 
         }
@@ -32,12 +26,10 @@ body{
 }
 
 //tablet
-@media screen and (max-width: 959px) and  (min-width: 648px){
+@media screen and (max-width: 959px) and (min-width: 648px){
     @for $i from 1 to 17{
         .col_m#{$i}{
             width: 2%*$i + 4.25%*$i;
-            float: left;
-            padding: 1%;
             padding-bottom: 4242px;
             margin-bottom: -4242px;
         }
@@ -46,10 +38,8 @@ body{
 
 // desktop
 @for $i from 1 to 17{
-    .col_l#{$i}{
+    .col_g#{$i}{
         width: 2%*$i + 4.25%*$i;
-        float: left;
-        padding: 1%;
         padding-bottom: 4242px;
         margin-bottom: -4242px;
     }
@@ -59,6 +49,7 @@ body{
 // RESUMO
 #resumo{
     background-color: #9BFFC4;
+    float: left;
     overflow: hidden;
 }
 
@@ -85,16 +76,69 @@ body{
 
 #antes_atual{
     display: inline;
+    margin-top: -3%; 
 }
 
 #atual{
     display: inline;
     background-color: #F3D944;
     padding: 3px;
+    margin-top: -3%;
 }
 
 // PRINCIPAL
 
 #principal{
-    background-color: #E5E5E5;
+    background-color: #C997CF;
+    //float: right;
+    overflow: hidden; 
+    padding-bottom: 15%;
+}
+
+#experiencias{
+    overflow: hidden;
+}
+
+// EDUCAÇÃO
+
+#educacao{
+    float: left;
+    overflow: hidden;
+}
+
+// CONHECIMENTOS TECNICOS
+
+#tecnico{
+    float: right;
+    overflow: hidden;
+    max-width: 50%;
+}
+
+.card{
+    background-color: #53D929;
+    width: 20%;
+    text-align: center;
+}
+
+.card:hover{
+    background-color: #F24332;
+    width: 21%;
+    text-align: center;
+    font-size: 110%;
+}
+
+// RODAPÉ
+
+#footer{
+    background-color: #C9D94E;
+}
+
+#copyright{
+    background-color: #C9D94E;
+    display: inline;
+    margin-left: 10%;
+}
+
+.titulo{
+    text-align: center;
 }
