@@ -61,6 +61,10 @@
   margin-bottom: 15px;
 }
 
+.atual{
+  font-weight: bold;
+  font-size: 1.8em; 
+}
 .dados{
   margin: 7px;
   padding: 14px;
