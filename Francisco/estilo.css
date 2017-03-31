@@ -1,0 +1,93 @@
+body {
+  background-color: #FFEF36; }
+
+h2, h3 {
+  font-family: "Macondo", cursive;
+  align-content: center; }
+
+p, li {
+  font-family: "Lato", sans-serif; }
+
+.texto {
+  align-content: justify; }
+
+.caixa {
+  background: #68E82C;
+  float: left;
+  margin: 1%;
+  border-radius: 10px; }
+
+img {
+  color: darken;
+  border-radius: 10px;
+  margin: 3px;
+  float: left; }
+
+@media screen and (min-width: 960px) {
+  .D3 {
+    width: 15%;
+    float: left;
+    align-content: center; }
+
+  .D13 {
+    width: 80%;
+    float: left;
+    margin: 1%;
+    float: left; }
+
+  .DSubCheio {
+    width: 100%;
+    float: left; } }
+@media screen and (min-width: 648px) and (max-width: 959px) {
+  .T5 {
+    width: 30%;
+    float: left;
+    margin: 1%; }
+
+  .T11 {
+    width: 60%;
+    float: left;
+    margin: 1%; }
+
+  .TSubMeio {
+    width: 45%;
+    float: left; } }
+@media screen and (max-width: 647px) {
+  .Mcheio {
+    width: 100%;
+    float: left;
+    margin: 1%; }
+
+  .MSubCheio {
+    width: 100%;
+    float: left; } }
+.subcaixa {
+  background: #39BC96;
+  float: left;
+  margin: 5px;
+  border-radius: 10px; }
+
+.MiniCard {
+  float: left;
+  width: 100%;
+  margin: 5px;
+  border-radius: 5px;
+  background-color: blue;
+  text-align: center; }
+  .MiniCard:hover {
+    background-color: rebeccapurple;
+    transform: scale(1.1, 1.1); }
+
+.cheio {
+  width: 100%;
+  float: left; }
+
+.SubCheio {
+  width: 100%;
+  float: left; }
+
+footer {
+  width: 100%;
+  float: left; }
+
+/*# sourceMappingURL=estilo.css.map */
