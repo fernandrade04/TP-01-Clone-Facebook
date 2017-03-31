@@ -1,0 +1,265 @@
+/* imports */
+
+@import url('https://fonts.googleapis.com/css?family=Cinzel:900');
+@import url('https://fonts.googleapis.com/css?family=Permanent+Marker');
+@import url('https://fonts.googleapis.com/css?family=Raleway');
+@import url('https://fonts.googleapis.com/css?family=Raleway:200i');
+@import url('https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300');
+@import url('https://fonts.googleapis.com/css?family=Josefin+Sans:100');
+@import url('https://fonts.googleapis.com/css?family=Sirin+Stencil');
+@import url('https://fonts.googleapis.com/css?family=Dancing+Script:700');
+@import url('https://fonts.googleapis.com/css?family=Pangolin');
+@import url('https://fonts.googleapis.com/css?family=Ubuntu:300');
+@import url('https://fonts.googleapis.com/css?family=Roboto+Slab');
+@import url('https://fonts.googleapis.com/css?family=Ubuntu:300i');
+
+@import 'mixins';
+
+/* variaveis */
+
+$primary-color: #F0F0F0;
+$resumo-color: black;
+$footer-color: #F8F8F8;
+$social-color: #C0C0C0;
+$secondary-color: #101010;
+$background-color: black;
+//$social-color: #B0B0B0;
+
+
+/* gerais */
+
+.clearfix {
+    overflow: auto;
+    zoom: 1;
+}
+
+body {
+    max-width: 100%;
+    @include flush--ends;
+    @include flush--sides;   
+    background-color: $secondary-color;
+}
+
+#tudo {
+    overflow: hidden;
+    max-width: 970px;
+    background-color: $background-color;
+    @include cf;
+    margin: auto;
+}
+/* Resumo */
+#resumo {
+    padding: 2%;
+    color: white;
+    font-family: 'Raleway', sans-serif;
+    @include cf;
+    background-color: black;
+    padding-top: 5%;
+    padding-bottom: 5%;
+    font-family: 'Raleway', sans-serif;
+    text-align: center;
+    float: left;
+}
+
+#nome {
+    font-size: 250%;
+    font-size: 8vi;
+    line-height: 90%;
+    margin: 0;
+    margin-bottom: 10%;
+}
+
+#ola {
+    padding-top: 3%;
+    font-weight: 200;
+    font-style: italic;
+    font-size: 2.4vi;
+    margin: 0;
+}
+
+#resumo p {
+    line-height: 100%;
+    margin: 2px;
+}
+
+#resumo img {
+    display: block;
+    width: 50%;
+    height: 50%;
+    margin: auto;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    -webkit-border-radius: 99em;
+    -moz-border-radius: 99em;
+    border-radius: 99em;
+    border: 6px solid #fff;
+    box-shadow: 0 3px 2px rgba(0, 0, 0, 0.1);
+}
+
+#resumo h1 {
+    color: white;
+}
+
+#resumo p {
+    color: white;
+    padding-left: 2%;
+}
+
+/* main */
+#atual {
+    padding: 0.3%;
+    color: white;
+    background-color: $secondary-color;
+}
+
+#main {
+    overflow: hidden;
+    @include cf;
+    background-color: $primary-color;
+    float: right;
+}
+
+#containermain {
+    padding: 1% 3% 2% 3%;
+}
+
+#main h1 {
+    margin: 0 0 1% 0;
+    font-family: 'Roboto Slab', serif;
+    font-size: 4.5vi;
+}
+
+#main h2 {
+    font-family: 'Ubuntu', sans-serif;
+    margin: 0;
+    font-size: 3vi;
+}
+
+#main h3 {
+    font-family: 'Ubuntu', sans-serif;
+    margin: 0;
+    font-size: 2vi;
+}
+
+#main h4 {
+    font-family: 'Ubuntu', sans-serif;
+    margin: .5% 0 3% 0;
+    font-style: italic;
+    font-size: 2vi;
+}
+
+#contec li {
+    font-family: 'Ubuntu', sans-serif;
+    background-color: rgb(221, 221, 221);
+    list-style-type: none;
+    border-radius: 20px;
+    text-align: center;
+
+    margin: auto;
+    margin-bottom: 3%;
+
+    padding-top: 1%;
+    padding-bottom: 1%;
+
+    width: 20%;
+    transition: all .5s ease-in-out;
+    display: inline-block;
+}
+
+#contec li:hover {
+    cursor: pointer;
+    background-color: $secondary-color;
+    color: white;
+    transform: scale(1.3);    
+    position: relative;
+    transition: 2.0s;
+}
+
+/* social */
+#social {
+    background-color: $social-color;
+    //padding: 2% 5% 2% 5%;
+}
+
+#social h1 {
+    text-align: center;
+    margin: 0 0 1% 0;
+    font-family: 'Roboto Slab', serif;
+    font-size: 4.5vi;
+}
+
+#social ul {
+    list-style-type: none;
+    padding-top: 2%;
+    padding-bottom: 5%;
+}
+
+#social li {
+    display: inline;
+    margin: 10%;
+}
+
+#social li img {
+    width: 10%;
+    height: 10%;
+    border-radius: 50%;
+}
+
+/* footer */
+footer {
+    background: white;
+    text-align: right;
+    background-color: #F8F8F8;
+}
+
+footer p {
+    margin: 0;
+    padding-top: 2%;
+    padding-bottom: 2%;
+    font-family: 'Pangolin', cursive;
+}
+
+/* Responsividade */
+
+
+@media screen and (min-width: 648px) and (max-width: 959px){
+    @for $i from 1 to 17{
+        .colt-#{$i}{
+            width: ((100 / 16) * $i) - 2%;
+            float:left;
+            padding:1%;
+            padding-bottom:99999px;
+            margin-bottom:-99999px;
+        }
+    }
+}
+@media screen and (min-width: 960px){
+    @for $i from 1 to 17{
+        .cold-#{$i}{
+            width: ((100 / 16) * $i) - 2%;
+            float:left;
+            padding:1%;
+            padding-bottom:99999px; 
+            margin-bottom:-99999px;
+        }
+    }
+    #social{
+        float: left;
+        @include cf;
+    }
+
+    #edu {
+        @include cf;
+        float: left;
+    }
+
+    #contec {
+        @include cf;
+        float: right;
+    }
+}
+
+
+
+
