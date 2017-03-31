@@ -1,17 +1,22 @@
 @import url('https://fonts.googleapis.com/css?family=Dosis');
 @import url('https://fonts.googleapis.com/css?family=Josefin+Sans');
+@import url('https://fonts.googleapis.com/css?family=Libre+Baskerville');
+@import url('https://fonts.googleapis.com/css?family=Love+Ya+Like+A+Sister');
+
 
     $font1 :'Dosis', sans-serif;
     $font2: 'Josefin Sans', sans-serif;
-    $c1: #261818;
+    $font3:  'Libre Baskerville', serif;
+    $font4:  'Love Ya Like A Sister', cursive;
+    $c1: #CFFFF1;
     $c2:#F2F2F2;
-    $c3:#F2E0D0;
-    $c4: #8C6C5A;
+    $c3:#83FFDC;
+    $c4: #417F6E;
     $c5: #593F36;
     $white: white;
     $black-color: black;
 
-    $larguraColuna: 10%;
+    $larguraColuna: 6.62%;
 
             @mixin ColumnStyle ($x) {
                 float: left;
@@ -67,19 +72,22 @@
                  margin-bottom: -99999px;
                  background-color: $c5;
                  @include border-radius (10px);
+                 text-align: center;
                  
 
              }
 
              img {
-                 width: 90%;
-                 height: 90%;
+                 width: 85%;
+                 height: 85%;
                  display: block;
                  margin: 0 auto;
                  padding: 2%;
                  -webkit-filter: grayscale(100%); 
                  filter: grayscale(100%);
-                 @include border-radius (10px);
+                @include border-radius (10px);
+                 padding: 2%;                  
+                 
              }
 
              #dados {
@@ -89,8 +97,10 @@
                  text-align: center;
                  font-family: $font1;
                  font-size: 18px;
-                 border: 3px solid $black-color;
+                 border: 3px solid #593F36;
                   @include border-radius (10px);
+                  padding: 2%;
+                  margin: 2%;
              }
 
              #resumo {
@@ -100,10 +110,13 @@
                  text-align: center;
                  font-family: $font1;
                  font-size: 18px;
-                 border: 3px solid $black-color;
+                 border: 3px solid #593F36;
                   @include border-radius (10px);
+                  padding: 2%;
+                  margin: 2%;
 
              }
+
 
              .container2 {
                  width: 80%;
@@ -112,6 +125,7 @@
                  margin-bottom: -99999px;
                  background-color: $c5;
                  @include border-radius (10px);
+                 text-align: center;
                  
              }
 
@@ -119,11 +133,37 @@
                  background-color: $c3;
                  color: $black-color;
                  position: relative;
-                 text-align: left;
+                 text-align: center;
                  font-family: $font1;
                  font-size: 18px;
-                 border: 3px solid $black-color;
-                @include border-radius (10px);
+                 border: 3px solid #593F36;
+                 @include border-radius (10px);
+                 padding: 1%;
+                 margin: 1.5%;
+             }
+
+             #text {
+                 border-bottom: 3px solid #593F36;
+                 padding: 1%;
+
+             }
+
+             #icon{
+                font-family: $font1;
+                position: relative;
+                text-align: left;
+                display: inline;
+                margin: auto;
+               
+
+             }
+             #tit {
+                 font-family: $font3;
+                 color: $black-color;
+                  position: relative;
+                 text-align: center;
+                 font-size: 20px;
+
              }
 
              #titex {
@@ -139,6 +179,8 @@
                 position: relative;
                 text-align: center;
                 font-size: 18px;
+                display: inline;
+
              }
 
             #atualex {
@@ -146,7 +188,10 @@
                 position: relative;
                 text-align: center;
                 font-size: 18px;
-                color: salmon;
+                color: red;
+                display: inline;
+                font-weight: bold;
+
 
             }
 
@@ -157,8 +202,10 @@
                  text-align: center;
                  font-family: $font1;
                  font-size: 18px;
-                 border: 3px solid $black-color;
+                 border: 3px solid #593F36;
                 @include border-radius (10px);
+                padding: 2%;
+                  margin: 1%;
              }
              
              #conhecimentos {
@@ -168,8 +215,10 @@
                  text-align: center;
                  font-family: $font1;
                  font-size: 18px;
-                 border: 3px solid $black-color;
+                 border: 3px solid #593F36;
                 @include border-radius (10px);
+                padding: 2%;
+                  margin: 1%;
 
              }
 
@@ -190,33 +239,33 @@
             }
 
              .con {
-                 font-family: $font2;
+                 font-family: $font4;
                  position: relative;
                  @include transition(2s); 
-        
-
+                  font-size: 21.2px;
+                 
+                
                  &:hover 
                     {
                         @include transform(360deg);
                     }
 
-
-             }
-             
-
-
-             i{
-                 width: 10px;
-                 height: 10px; 
              }
 
+
+
+
+        
              footer {
-                 background-color: $c2;
+                 background-color: #B8EDE3;
                  color: $black-color;
                  @include border-radius (10px);
                  width: 100%;
+                 height: 60%;
                  clear: both;
-                 font-size: 20px;
-                 padding-top: 2%;
+                 font-size: 18px;
+                 margin: 1%;
+                 text-align: center;
+                 font-family: $font1;
              }
 
