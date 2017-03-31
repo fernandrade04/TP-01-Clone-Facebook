@@ -178,6 +178,23 @@ $fonte3: 'Revalia', cursive;
         padding: 1%;
         background-color: $cor2;
     }
+
+    /*Rodapé*/
+    #footer{
+        padding: 1%;
+        display: block;
+        background-color: $cor5;
+        
+        #icon{
+            padding-right: 1%;
+        }
+        .csign{
+            position: relative;
+            display: block;
+            padding: 2%;
+            font-size: 1.0em;
+        }
+    }
 }
 
 /*Destaques da página*/
