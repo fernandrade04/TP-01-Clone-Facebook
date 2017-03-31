@@ -110,8 +110,7 @@ span {
 #rodape {
   background-color: #000000;
   height: 150px;
-  text-align: center;
-  padding: 0px 10px 10px 0px; }
+  text-align: center; }
   #rodape a {
     color: #FFFFFF;
     font-size: 30px; }
