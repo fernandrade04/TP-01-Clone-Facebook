@@ -1,0 +1,432 @@
+@import url("https://fonts.googleapis.com/css?family=Dosis");
+@import url("https://fonts.googleapis.com/css?family=Josefin+Sans");
+@import url("https://fonts.googleapis.com/css?family=Libre+Baskerville");
+@import url("https://fonts.googleapis.com/css?family=Love+Ya+Like+A+Sister");
+@media screen and (min-width: 960px) {
+  .l1 {
+    float: left;
+    padding: 1%;
+    width: 1.62%; }
+
+  .l2 {
+    float: left;
+    padding: 1%;
+    width: 8.24%; }
+
+  .l3 {
+    float: left;
+    padding: 1%;
+    width: 14.86%; }
+
+  .l4 {
+    float: left;
+    padding: 1%;
+    width: 21.48%; }
+
+  .l5 {
+    float: left;
+    padding: 1%;
+    width: 28.1%; }
+
+  .l6 {
+    float: left;
+    padding: 1%;
+    width: 34.72%; }
+
+  .l7 {
+    float: left;
+    padding: 1%;
+    width: 41.34%; }
+
+  .l8 {
+    float: left;
+    padding: 1%;
+    width: 47.96%; }
+
+  .l9 {
+    float: left;
+    padding: 1%;
+    width: 54.58%; }
+
+  .l10 {
+    float: left;
+    padding: 1%;
+    width: 61.2%; }
+
+  .l11 {
+    float: left;
+    padding: 1%;
+    width: 67.82%; }
+
+  .l12 {
+    float: left;
+    padding: 1%;
+    width: 74.44%; }
+
+  .l13 {
+    float: left;
+    padding: 1%;
+    width: 81.06%; }
+
+  .l14 {
+    float: left;
+    padding: 1%;
+    width: 87.68%; }
+
+  .l15 {
+    float: left;
+    padding: 1%;
+    width: 94.3%; }
+
+  .l16 {
+    float: left;
+    padding: 1%;
+    width: 100.92%; } }
+@media screen and (min-width: 648px) and (max-width: 959px) {
+  .m1 {
+    float: left;
+    padding: 1%;
+    width: 1.62%; }
+
+  .m2 {
+    float: left;
+    padding: 1%;
+    width: 8.24%; }
+
+  .m3 {
+    float: left;
+    padding: 1%;
+    width: 14.86%; }
+
+  .m4 {
+    float: left;
+    padding: 1%;
+    width: 21.48%; }
+
+  .m5 {
+    float: left;
+    padding: 1%;
+    width: 28.1%; }
+
+  .m6 {
+    float: left;
+    padding: 1%;
+    width: 34.72%; }
+
+  .m7 {
+    float: left;
+    padding: 1%;
+    width: 41.34%; }
+
+  .m8 {
+    float: left;
+    padding: 1%;
+    width: 47.96%; }
+
+  .m9 {
+    float: left;
+    padding: 1%;
+    width: 54.58%; }
+
+  .m10 {
+    float: left;
+    padding: 1%;
+    width: 61.2%; }
+
+  .m11 {
+    float: left;
+    padding: 1%;
+    width: 67.82%; }
+
+  .m12 {
+    float: left;
+    padding: 1%;
+    width: 74.44%; }
+
+  .m13 {
+    float: left;
+    padding: 1%;
+    width: 81.06%; }
+
+  .m14 {
+    float: left;
+    padding: 1%;
+    width: 87.68%; }
+
+  .m15 {
+    float: left;
+    padding: 1%;
+    width: 94.3%; }
+
+  .m16 {
+    float: left;
+    padding: 1%;
+    width: 100.92%; } }
+@media screen and (min-width: 0px) and (max-width: 647px) {
+  .p1 {
+    float: left;
+    padding: 1%;
+    width: 1.62%; }
+
+  .p2 {
+    float: left;
+    padding: 1%;
+    width: 8.24%; }
+
+  .p3 {
+    float: left;
+    padding: 1%;
+    width: 14.86%; }
+
+  .p4 {
+    float: left;
+    padding: 1%;
+    width: 21.48%; }
+
+  .p5 {
+    float: left;
+    padding: 1%;
+    width: 28.1%; }
+
+  .p6 {
+    float: left;
+    padding: 1%;
+    width: 34.72%; }
+
+  .p7 {
+    float: left;
+    padding: 1%;
+    width: 41.34%; }
+
+  .p8 {
+    float: left;
+    padding: 1%;
+    width: 47.96%; }
+
+  .p9 {
+    float: left;
+    padding: 1%;
+    width: 54.58%; }
+
+  .p10 {
+    float: left;
+    padding: 1%;
+    width: 61.2%; }
+
+  .p11 {
+    float: left;
+    padding: 1%;
+    width: 67.82%; }
+
+  .p12 {
+    float: left;
+    padding: 1%;
+    width: 74.44%; }
+
+  .p13 {
+    float: left;
+    padding: 1%;
+    width: 81.06%; }
+
+  .p14 {
+    float: left;
+    padding: 1%;
+    width: 87.68%; }
+
+  .p15 {
+    float: left;
+    padding: 1%;
+    width: 94.3%; }
+
+  .p16 {
+    float: left;
+    padding: 1%;
+    width: 100.92%; } }
+body {
+  background-color: #CFFFF1;
+  padding-left: 5%;
+  padding-right: 5%; }
+
+#container1 {
+  width: 15%;
+  margin: auto;
+  padding-bottom: 99999px;
+  margin-bottom: -99999px;
+  background-color: #593F36;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  border-radius: 10px;
+  text-align: center; }
+
+img {
+  width: 85%;
+  height: 85%;
+  display: block;
+  margin: 0 auto;
+  padding: 2%;
+  -webkit-filter: grayscale(100%);
+  filter: grayscale(100%);
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  border-radius: 10px;
+  padding: 2%; }
+
+#dados {
+  background-color: #417F6E;
+  color: white;
+  position: relative;
+  text-align: center;
+  font-family: "Dosis", sans-serif;
+  font-size: 18px;
+  border: 3px solid #593F36;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  border-radius: 10px;
+  padding: 2%;
+  margin: 2%; }
+
+#resumo {
+  background-color: #417F6E;
+  color: white;
+  position: relative;
+  text-align: center;
+  font-family: "Dosis", sans-serif;
+  font-size: 18px;
+  border: 3px solid #593F36;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  border-radius: 10px;
+  padding: 2%;
+  margin: 2%; }
+
+.container2 {
+  width: 80%;
+  margin: auto;
+  padding-bottom: 99999px;
+  margin-bottom: -99999px;
+  background-color: #593F36;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  border-radius: 10px;
+  text-align: center; }
+
+#experiencias {
+  background-color: #83FFDC;
+  color: black;
+  position: relative;
+  text-align: center;
+  font-family: "Dosis", sans-serif;
+  font-size: 20px;
+  border: 3px solid #593F36;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  border-radius: 10px;
+  padding: 1%;
+  margin: 1.5%; }
+
+#text {
+  border-bottom: 3px solid #593F36;
+  padding: 1%; }
+
+#icon {
+  font-family: "Dosis", sans-serif;
+  position: relative;
+  text-align: left;
+  display: inline;
+  margin: auto; }
+
+#tit {
+  font-family: "Libre Baskerville", serif;
+  color: black;
+  position: relative;
+  text-align: center;
+  font-size: 22px; }
+
+#titex {
+  font-family: "Josefin Sans", sans-serif;
+  position: relative;
+  text-align: center;
+  font-size: 20px; }
+
+#anoex {
+  font-family: "Josefin Sans", sans-serif;
+  position: relative;
+  text-align: center;
+  font-size: 20px;
+  display: inline; }
+
+#atualex {
+  font-family: "Josefin Sans", sans-serif;
+  position: relative;
+  text-align: center;
+  font-size: 20px;
+  color: red;
+  display: inline;
+  font-weight: bold; }
+
+#educacao {
+  background-color: #83FFDC;
+  color: black;
+  position: relative;
+  text-align: center;
+  font-family: "Dosis", sans-serif;
+  font-size: 20px;
+  border: 3px solid #593F36;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  border-radius: 10px;
+  padding: 2%;
+  margin: 1%; }
+
+#conhecimentos {
+  background-color: #83FFDC;
+  color: black;
+  position: relative;
+  text-align: center;
+  font-family: "Dosis", sans-serif;
+  font-size: 20px;
+  border: 3px solid #593F36;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  border-radius: 10px;
+  padding: 2%;
+  margin: 1%; }
+
+.con {
+  font-family: "Love Ya Like A Sister", cursive;
+  position: relative;
+  transition: width 2s, height 2s, transform 2s;
+  -webkit-transition: width 2s, height 2s, -webkit-transform 2s;
+  -moz-transition: width 2s, height 2s, -moz-transform 2s;
+  -ms-transition: width 2s, height 2s, -ms-transform 2s;
+  font-size: 21.2px; }
+  .con:hover {
+    transform: rotate(360deg);
+    -webkit-transform: rotate(360deg);
+    -moz-transform: rotate(360deg);
+    -ms-transform: rotate(360deg); }
+
+footer {
+  background-color: #B8EDE3;
+  color: black;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  border-radius: 10px;
+  width: 100%;
+  height: 60%;
+  clear: both;
+  font-size: 18px;
+  margin: 1%;
+  text-align: center;
+  font-family: "Dosis", sans-serif; }
+
+/*# sourceMappingURL=style.css.map */

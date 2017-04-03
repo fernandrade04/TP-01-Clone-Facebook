@@ -1,0 +1,271 @@
+@import url('https://fonts.googleapis.com/css?family=Dosis');
+@import url('https://fonts.googleapis.com/css?family=Josefin+Sans');
+@import url('https://fonts.googleapis.com/css?family=Libre+Baskerville');
+@import url('https://fonts.googleapis.com/css?family=Love+Ya+Like+A+Sister');
+
+
+    $font1 :'Dosis', sans-serif;
+    $font2: 'Josefin Sans', sans-serif;
+    $font3:  'Libre Baskerville', serif;
+    $font4:  'Love Ya Like A Sister', cursive;
+    $c1: #CFFFF1;
+    $c2:#F2F2F2;
+    $c3:#83FFDC;
+    $c4: #417F6E;
+    $c5: #593F36;
+    $white: white;
+    $black-color: black;
+
+    $larguraColuna: 6.62%;
+
+            @mixin ColumnStyle ($x) {
+                float: left;
+                padding: 1%;
+
+                width: ($larguraColuna * $x) - 5%;
+               
+                
+            }
+
+            @mixin multipleColumnSize ($size) {
+
+                @for $j from 1 to 17 {
+                    .#{$size}#{$j} {
+                        @include ColumnStyle($j); 
+                    }
+                }
+            }
+
+             @media screen and (min-width: 960px) {
+
+                @include multipleColumnSize(l);
+             }
+
+             @media screen and (min-width: 648px) and (max-width: 959px)  {
+
+                 @include multipleColumnSize(m);
+             }
+
+             @media screen and (min-width: 0px) and (max-width: 647px)   {
+
+                 @include multipleColumnSize(p);
+             }
+
+             @mixin border-radius($radius) {
+                -webkit-border-radius: $radius; 
+                -moz-border-radius: $radius; 
+                -ms-border-radius: $radius;
+                border-radius: $radius;  
+            }
+
+
+             body {
+                background-color: $c1;
+                padding-left: 5%;
+                padding-right: 5%;
+             }
+
+             #container1 {
+                 width: 15%;
+                 margin: auto;
+                 padding-bottom: 99999px;
+                 margin-bottom: -99999px;
+                 background-color: $c5;
+                 @include border-radius (10px);
+                 text-align: center;
+                 
+
+             }
+
+             img {
+                 width: 85%;
+                 height: 85%;
+                 display: block;
+                 margin: 0 auto;
+                 padding: 2%;
+                 -webkit-filter: grayscale(100%); 
+                 filter: grayscale(100%);
+                @include border-radius (10px);
+                 padding: 2%;                  
+                 
+             }
+
+             #dados {
+                 background-color: $c4;
+                 color: $white;
+                 position: relative;
+                 text-align: center;
+                 font-family: $font1;
+                 font-size: 18px;
+                 border: 3px solid #593F36;
+                  @include border-radius (10px);
+                  padding: 2%;
+                  margin: 2%;
+             }
+
+             #resumo {
+                 background-color: $c4; 
+                 color: $white;
+                 position: relative;
+                 text-align: center;
+                 font-family: $font1;
+                 font-size: 18px;
+                 border: 3px solid #593F36;
+                  @include border-radius (10px);
+                  padding: 2%;
+                  margin: 2%;
+
+             }
+
+
+             .container2 {
+                 width: 80%;
+                 margin: auto;
+                 padding-bottom: 99999px;
+                 margin-bottom: -99999px;
+                 background-color: $c5;
+                 @include border-radius (10px);
+                 text-align: center;
+                 
+             }
+
+             #experiencias {
+                 background-color: $c3;
+                 color: $black-color;
+                 position: relative;
+                 text-align: center;
+                 font-family: $font1;
+                 font-size: 20px;
+                 border: 3px solid #593F36;
+                 @include border-radius (10px);
+                 padding: 1%;
+                 margin: 1.5%;
+             }
+
+             #text {
+                 border-bottom: 3px solid #593F36;
+                 padding: 1%;
+
+             }
+
+             #icon{
+                font-family: $font1;
+                position: relative;
+                text-align: left;
+                display: inline;
+                margin: auto;
+               
+
+             }
+             #tit {
+                 font-family: $font3;
+                 color: $black-color;
+                  position: relative;
+                 text-align: center;
+                 font-size: 22px;
+
+             }
+
+             #titex {
+                font-family: $font2;
+                position: relative;
+                text-align: center;
+                font-size: 20px;
+
+             }
+
+             #anoex {
+                font-family: $font2;
+                position: relative;
+                text-align: center;
+                font-size: 20px;
+                display: inline;
+
+             }
+
+            #atualex {
+                font-family: $font2;
+                position: relative;
+                text-align: center;
+                font-size: 20px;
+                color: red;
+                display: inline;
+                font-weight: bold;
+
+
+            }
+
+             #educacao{
+                 background-color: $c3;
+                 color: $black-color;
+                 position: relative;
+                 text-align: center;
+                 font-family: $font1;
+                 font-size: 20px;
+                 border: 3px solid #593F36;
+                @include border-radius (10px);
+                padding: 2%;
+                  margin: 1%;
+             }
+             
+             #conhecimentos {
+                 background-color: $c3;
+                 color: $black-color;
+                 position: relative;
+                 text-align: center;
+                 font-family: $font1;
+                 font-size: 20px;
+                 border: 3px solid #593F36;
+                @include border-radius (10px);
+                padding: 2%;
+                  margin: 1%;
+
+             }
+
+             @mixin transform($deg) {
+                transform: rotate($deg);
+                -webkit-transform: rotate($deg);
+                -moz-transform: rotate($deg);
+                -ms-transform: rotate($deg);
+             }
+             
+             @mixin transition($t) {
+                transition: width $t, height $t, transform $t;
+                -webkit-transition: width $t, height $t, -webkit-transform $t;
+                -moz-transition: width $t, height $t, -moz-transform $t;
+                -ms-transition: width $t, height $t, -ms-transform $t;
+
+
+            }
+
+             .con {
+                 font-family: $font4;
+                 position: relative;
+                 @include transition(2s); 
+                  font-size: 21.2px;
+                 
+                
+                 &:hover 
+                    {
+                        @include transform(360deg);
+                    }
+
+             }
+
+
+
+
+        
+             footer {
+                 background-color: #B8EDE3;
+                 color: $black-color;
+                 @include border-radius (10px);
+                 width: 100%;
+                 height: 60%;
+                 clear: both;
+                 font-size: 18px;
+                 margin: 1%;
+                 text-align: center;
+                 font-family: $font1;
+             }
+
