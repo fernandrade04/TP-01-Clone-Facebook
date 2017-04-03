@@ -1,0 +1,175 @@
+$font-principal: #EBE2D4;   //Cor da letra principal
+$back-color: #5DA0A2;       //Cor do background da area principal
+$sec_color: #F3FEFF;        //Cor do background da area secundaria
+$fundo_color: #122D42;      //Cor do background do fundo
+$let_fundo: white;          //Cor da letra do fundo
+$body_color: #34495E;       //Cor do background do body
+$let_sec: #3F4042;          //Cor da letra da area secundaria
+
+.container{ //tudo
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+body{
+    background-color: $body_color;
+}
+
+@for $i from 1 to 17{
+    .col_#{$i}{
+        width: ((100%/16) * $i);
+        float: left;
+        padding-bottom: 99999px;
+        margin-bottom: -99999px;
+    }
+}
+
+@media screen and (max-width: 647px){
+    @for $i from 1 to 17{
+        .colp_#{$i}{
+            width: ((100%/16) * $i);
+            float: left;
+            padding-bottom: 99999px;
+            margin-bottom: -99999px;
+        }
+    }
+}
+
+@media screen and (min-width: 648px) and (max-width: 1049px){
+    @for $i from 1 to 17{
+        .colm_#{$i}{
+            width: ((100%/16) * $i);
+            float: left;
+            padding-bottom: 99999px;
+            margin-bottom: -99999px;
+        }
+    }
+}
+
+@media screen and (min-width: 1050px){
+    @for $i from 1 to 17{
+        .colg_#{$i}{
+            width: ((100%/16) * $i);
+            float: left;
+            padding-bottom: 99999px;
+            margin-bottom: -99999px;
+        }
+    }
+}
+
+.ab{  //habilidades
+    color: black;
+    text-align: center;
+    margin: 10%;
+    background-color: $back-color;
+    border-radius: 10px;
+}
+
+.ab:hover{
+    -webkit-transform : scale(1.2); 
+    -ms-transform: scale(1.2); 
+    transform: scale(1.2); 
+    position: relative;
+    transition: 1.0s;
+}
+
+p{
+    text-align: justify;
+    font-size: 18px;
+}
+
+.body {
+  overflow: hidden;
+  text-justify: auto;
+}
+
+img{
+    padding-top: 2%;
+    max-width: 80%;
+    border-radius: 50%;
+    filter: alpha(opacity=50);
+    display: block;
+    margin: 0 auto;
+    filter: grayscale(100%);
+}
+
+#principal{    //resumo
+    background-color: $back-color;
+    color:$font-principal;
+}
+
+#secundaria{  
+    font-family: 'Quicksand', sans-serif;
+    background-color: $sec_color;
+    display:  inline-block;
+    text-align: center;
+    color: $let_sec;
+}
+
+.dados{
+    padding: 2%;
+    text-align: center;
+    font-family: 'Josefin Slab', serif;
+    font-size: 1.6em;
+}
+
+.resumo{
+    padding: 2%;
+    text-align: center;
+    font-family: 'Poiret One', cursive;
+}
+
+.Conhecimento{
+    text-align: center;
+}
+
+.xp{ //experiencia
+    padding: 2%;
+}
+
+#edu{
+
+}
+
+#tec{
+    
+    float: right;
+}
+
+#fundo{
+    overflow: hidden;
+    text-align: center;
+    background-color: $fundo_color;
+    color: $let_fundo;
+}
+
+h1{
+    font-family: 'Rokkitt', serif;
+}
+
+h3{
+    text-align: justify;
+}
+
+li{
+    list-style: none;
+    list-style-type: none;
+    text-align: justify;
+    padding: 1%;
+    margin-bottom: 1%;
+}
+
+h5{
+    text-align: justify;
+}
+
+span{
+    text-align: left;
+    padding: 1%;
+    background-color:#67FF5B;
+    border-radius: 5px;
+}
+
+.form{
+    padding: 1%;
+}
