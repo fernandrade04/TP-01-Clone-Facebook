@@ -276,7 +276,7 @@ img:hover {
     float: left;
   }
 
-  #hiding-logo {
+  .hiding-title {
     display: none;
   }
 }
