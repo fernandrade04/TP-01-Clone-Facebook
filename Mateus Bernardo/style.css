@@ -1,0 +1,144 @@
+body{
+    margin-left: 7%;
+    margin-right: 7%;
+    background: gainsboro;
+    font-family: Arial, Helvetica, sans-serif;
+}
+#menu{
+    margin-top: 2%;
+
+    height: auto;
+    overflow: hidden;
+}
+#titulo, #secWeb, #secMob, #SecELern{
+    text-align: center;
+
+    padding-left: 4.16%;
+    padding-right: 4.16%;
+    padding: 4px;
+    border: 1px solid;
+
+}
+
+
+
+#destaqueNoticia{
+/*    padding-left: 4.16%;
+    padding-right: 4.16%;
+*/  
+    margin-top: 0.5%;
+    padding: 0.5%;
+    height: auto;
+    overflow: hidden;
+    border: 1px ;
+    border-radius: 10px;
+    background: #e6e6e6;
+
+
+}
+.tituloDestaque, .imagemDestaque{
+    
+    padding-bottom: 99999px;
+    margin-bottom: -99999px;
+    
+}
+
+#noticias{
+    margin-top: 0.5%;
+
+    padding: auto;
+    height: auto;
+    overflow: hidden;
+    
+}
+
+.WebNews, .MobNews, .LearnNews{
+/*    padding-bottom: 99999px;
+    margin-bottom: -99999px;*/
+    padding: 2%;
+    text-align: center;
+    margin: 0.3%;
+    border: 1px ;
+    border-radius: 10px;
+    background: #cccccc;
+
+}
+.WebNews{
+    color:#cc0000;
+}
+.MobNews{
+    color: #00802b;
+}
+.LearnNews{
+    color: #3366ff;
+}
+
+
+/*.imagemDestaque>*/
+img{
+    max-width: 100%;
+    width: auto;
+    height: auto;
+    border: 1px;
+    border-radius: 3px;
+
+
+}
+@media screen and (min-width: 1200px) {
+    .col-D-1 {width: 6.25%; float: left;}
+    .col-D-2{width: 12.5%; float: left;}
+    .col-D-3 {width: 18.75%; float: left;}
+    .col-D-4 {width: 25%; float: left;}
+    .col-D-5 {width: 31.25%; float: left;}
+    .col-D-6 {width: 37.5%; float: left;}
+    .col-D-7 {width: 43.75%; float: left;}
+    .col-D-8 {width: 50%; float: left;}
+    .col-D-9 {width: 56.25%; float: left;}
+    .col-D-10 {width: 62.25%; float: left;}
+    .col-D-11 {width: 68.75%; float: left;}
+    .col-D-12 {width: 75%; float: left;}
+    .col-D-13 {width: 81.25%; float: left;}
+    .col-D-14 {width: 87.5%; float: left;}
+    .col-D-15 {width: 93.75%; float: left;}
+    .col-D-16 {width: 100%; float: left;}
+}
+
+
+@media screen and (min-width: 560px) and (max-width:1199px){
+    .col-T-1 {width: 6.25%; float: left;}
+    .col-T-2{width: 12.5%; float: left;}
+    .col-T-3 {width: 18.75%; float: left;}
+    .col-T-4 {width: 25%; float: left;}
+    .col-T-5 {width: 31.25%; float: left;}
+    .col-T-6 {width: 37.5%; float: left;}
+    .col-T-7 {width: 43.75%; float: left;}
+    .col-T-8 {width: 50%; float: left;}
+    .col-T-9 {width: 56.25%; float: left;}
+    .col-T-10 {width: 62.25%; float: left;}
+    .col-T-11 {width: 68.75%; float: left;}
+    .col-T-12 {width: 75%; float: left;}
+
+    .col-T-13 {width: 81.25%; float: left;}
+    .col-T-14 {width: 87.5%; float: left;}
+    .col-T-15 {width: 93.75%; float: left;}
+    .col-T-16 {width: 100%; float: left;}
+}
+@media screen and (max-width: 559px){
+    .col-S-1 {width: 6.25%; float: left;}
+    .col-S-2{width: 12.5%; float: left;}
+    .col-S-3 {width: 18.75%; float: left;}
+    .col-S-4 {width: 25%; float: left;}
+    .col-S-5 {width: 31.25%; float: left;}
+    .col-S-6 {width: 37.5%; float: left;}
+    .col-S-7 {width: 43.75%; float: left;}
+    .col-S-8 {width: 50%; float: left;}
+    .col-S-9 {width: 56.25%; float: left;}
+    .col-S-10 {width: 62.25%; float: left;}
+    .col-S-11 {width: 68.75%; float: left;}
+    .col-S-12 {width: 75%; float: left;}
+
+    .col-S-13 {width: 81.25%; float: left;}
+    .col-S-14 {width: 87.5%; float: left;}
+    .col-S-15 {width: 93.75%; float: left;}
+    .col-S-16 {width: 100%; float: left;}
+}
