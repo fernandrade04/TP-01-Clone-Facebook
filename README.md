@@ -1,6 +1,6 @@
 # Prova 01 - HTML, SCSS & RWD
 
-### Desenvolvimento de Aplicações Web 
+## Desenvolvimento de Aplicações Web 
 
 João Eduardo Montandon
 
@@ -8,69 +8,118 @@ Setor de Informática - COLTEC/MG
 
 Valor: 8 pontos
 
-## Curriculum Vitae
+Data: 02/04/2018
 
-A web é a vitrine de qualquer profissional atualmente. Por meio de um portfolio na web, é possível mostrar ao mundo suas habilidades e especialidades. Nessa prova, você deverá criar uma página que representará seu currículo. Mais especificamente, seu site deverá conter quatro seções principais:
+## Blog de Tecnologia (8 pontos)
 
-1. Resumo
-2. Experiência & Formação
-3. Habilidades
-4. Social & Rodapé
+Você foi contratado para desenvolver o protótipo de um blog de tecnologia. Este blog irá cobrir tópicos relacionados a:
 
-Algumas restrições foram definidas para cada uma das seções descritas anteriormente, assim como para o site como um todo. Os requisitos estão descritos abaixo:
+*   **Mundo Web:** tópico que conterá notícias relacionadas ao mundo de desenvolvimento web.
+*   **Mundo Mobile:** tópico que conterá notícias relacionadas ao mundo de desenvolvimento mobile
+*   **eLearning:** tópico que conterá vídeos e tutoriais sobre desenvolvimento web e mobile.
 
-### Layout da Página
+Após discussão com sua equipe, Vocês decidiram dividir o protótipo em quatro partes principais:
 
-A página deverá suportar três tipos diferentes de layout: Desktop, Tablet e Mobile. Recomenda-se que a divisão entre as telas aconteça com base nos seguintes parâmetros:
+*   **Características gerais:** Onde são explicadas as diretrizes gerais do blog.
+*   **Página principal:** Onde são explicadas as diretrizes sobre a página principal do blog.
+*   **Página do tópico:** Onde são explicadas as diretrizes sobre a página de cada tópico em específico.
+*   **Página da notícia:** Onde são explicadas as diretrizes sobre a página de cada notícia do blog.
 
-* Desktop com largura de pelo menos `960px`
-* Tablet com largura entre `648px` e `959px`
-* Mobile com largura de até `647px`
+O documento a seguir irá descrever em detalhes as características de cada parte do protótipo a ser implementado.
 
-Para implementação do layout responsivo, você deverá utilizar um layout de grid de 16 colunas. As imagens abaixo consistem em **sugestões** de protótipos para cada um dos três layouts. Você pode optar por um layout diferente, desde que obedeça às seguintes restrições:
+### 1.0 - Características gerais
 
-* Presença obrigatória de rodapé nos três layouts
-* Layout Desktop e Tablet com pelo menos duas áreas lado-a-lado
-* Layout Mobile totalmente verticalizado
-* Os três layouts devem ser estruturados de formas distintas.
+#### Layout
 
--> ![Imagem Desktop](desktop.png =400x) <-
--> ![Imagem Tablet](tablet.png =400x) <-
--> ![Imagem Mobile](mobile.png =400x) <-
+O blog deverá apresentar um layout moderno e clean. Para isso, dê preferência a fundos claros (como branco), e sem cores gradiente. Certifique-se de que o conteúdo da página - assim como seu layout - esteja centralizado (caso a página seja exibida em uma tela superior aos limites definidos pela equipe de design).
 
-### Estilo Padrão
+<table border="1">
+    <tbody>
+        <tr>
+            <td colspan="2" style="text-slign:center">Resoluções Limites</td>
+        </tr>
+        <tr>
+            <td>Desktop</td>
+            <td>1200 pixels</td>
+        </tr>
+        <tr>
+            <td>Tablet</td>
+            <td>768 pixels</td>
+        </tr>
+        <tr>
+            <td>Mobile</td>
+            <td>560 pixels</td>
+        </tr>
+    </tbody>
+</table>
 
-Você deverá customizar a fonte da página utilizando dois estilos diferentes: Uma para títulos e destaques, e outra para texto e outras informações convencionais. *Sugestão: utilize uma fonte do [Google Fonts](https://fonts.google.com/)*.
+Para implementação do layout você deverá utilizar, **obrigatóriamente**, um layout híbrido com 16 colunas. Recomenda-se fortemente que tanto o layout híbrido, quanto o restante do estilo sejam feitos utilizando SASS/SCSS.
 
-Além disso, você deverá definir uma paleta de 5 cores distintas para serem utilizadas na página. *Sugestão: utilize uma paleta pronta do [Adobe Kuler](https://color.adobe.com/explore/?filter=random&time=all)*.
+#### Menu
 
-Você deverá utilizar ícones para para complementar as informações de pelo menos duas seções.
+O menu representa um componente fundamental na navegação do blog. De forma geral, este menu conterá alinhado a esquerda o nome do blog junto de um ícone (40x40). A direita do menu serão exibidos links para acessar os três tópicos do blog.
 
-### Resumo
+É importante ressaltar que, assim como todo o blog, o menu deverá ter um comportamento responsivo. Isto é, seu aspecto deverá mudar para se encaixar melhor no dispositivo do usuário. As figuras abaixo mostram como deverá ficar o aspecto do menu nas três resoluções:
 
-O resumo deverá contar com foto, local, informação de contato (e-mail e telefone), além de um pequeno texto de resumo (máximo 2 parágrafos).
+<img src="images/menu-m.png">
 
-Você deverá aplicar algum tipo de filtro sobre a foto, como [borrado](https://www.w3schools.com/cssref/css3_pr_filter.asp), [escurecimento](https://www.w3schools.com/cssref/css3_pr_filter.asp), [etc](https://www.w3schools.com/cssref/css3_pr_filter.asp).
+Além disso, o menu deverá aparecer sempre no topo da página, independentemente da posição vertical na qual o usuário se encontrar.
 
-Aplique uma cor de destaque sobre a área de resumo, para que se possa se destacar das demais.
+### 2.0 - Página principal
 
-### Experiência & Formação
+A página principal, como o próprio nome diz, representa a página inicial do sistema. É por meio desta página que o usuário irá entrar no site. Pensando nisso, sua equipe decidiu fornecer três estruturas de layout: Desktop, Tablet, e mobile.
 
-Ambos os tópicos deverão fazer parte da seção principal do site. As experiências deverão mostrar todos os projetos e opoturnidades na qual você já trabalhou antes. Cada oportunidade deverá ter um título, data de início e fim, e um pequeno texto resumindo as suas atividades. Caso você esteja atuando no momento em um dos projetos listados, esse projeto deverá ganhar algum tipo de destaque.
+As figuras abaixo mostram como este site deverá ser organizado para cada layout.
 
-De forma análoga, a formação também deverá constar com um título (nome da instituição), data de início e fim, e uma pequena descrição dizendo qual curso foi feito. Assim como na experiência, deve-se destacar qual a sua formação sendo cursada no momento.
 
-### Conhecimento Técnico
 
-Essa seção deverá exibir quais são suas capacidades técnicas. Você deverá exibir cada capacidade em um formato similar a de um cartão. Esses cartões deverão ser apresentar efeitos animados ao interagirem com usuário (escala, mudança de cores, etc). É importante ressaltar que a seção de conhecimento Técnico deverá pertencer a mesma área de experiência e formação da página.
+<img src="images/principal-d.png" width="32%"/>
+<img src="images/principal-t.png" width="32%"/>
+<img src="images/principal-m.png" width="32%"/>
 
-### Social & Rodapé
+Como pode ser observado, no modelo Desktop a página irá possuir um um container principal, que irá ocupar a largura de toda a página, seguido de três colunas de notícias. O container principal deverá conter uma notícia em destaque, de preferência com uma foto que ocupe todo o container, com o título ao seu lado.
 
-Essa seção deverá ser estruturada no formato de uma barra inferior. Essa barra deverá mostrar o acesso às redes sociais no formato de ícones em um tamanho grande o suficiente para ser confortável. Ainda, é importante adicionar um texto de copyright em seu rodapé.
+Com relação as colunas, cada uma representa um dos tópicos abordados pelo site. Essas colunas deverão conter as notícias relacionadas aos respectivos tópicos. Além disso, cada tópico deverá ter sua cor específica, similar ao que é feito em portais como [globo.com](http://www.globo.com), [UOL](http://www.uol.com.br), [brainstorm9](http://www.b9.com.br), etc.
 
-### Publicando seu CV no GitHub (1 pt extra)
+As cores poderão ficar a seu cargo. Mas caso ainda não tenha se decidido, segue abaixo uma sugestão (horrível) de cores-base:
 
-Publique seu CV utilizando o [GitHub pages](https://help.github.com/articles/user-organization-and-project-pages/) e ganhe um ponto extra.
+*   Web: <span style="background-color: #8AC007; color:white; padding: 0.2em;">#8AC007 ou RGB(138,192,7)</span>
+*   Mobile: <span style="background-color: #b51110; color:white; padding: 0.2em;">#b51110 ou RGB(181,17,16)</span>
+*   eLearning: <span style="background-color: #2a3744; color:white; padding: 0.2em;">#2a3744 ou RGB(42, 55, 68)</span>
+
+O layout de tablet possui uma estrutura similar ao Desktop, com a diferença de que a coluna de notícias de eLearning foi jogada para baixo, e passou a ocupar a largura de toda a página. Já o layout mobile possui uma estrutura totalmente verticalizada. Cada uma das colunas passa a ocupar um trecho completo da página, sendo empilhadas uma sobre a outra.
+
+#### Fotos
+
+Como diferencial, o dono do blog requisitou que seu site tire o máximo proveito de imagens. Pensando nisso, a equipe de design elaborou a seguinte ideia: Cada notícia conterá uma foto e um título. No entanto, ao passar o mouse sobre a imagem, ela deverá ganhar algum tipo de destaque (ficar escurecida, alterar para preto-e-branco, etc.). Essa ideia foi inspirada no site [brainstorm9](http://www.b9.com.br/).
+
+### 3.0 - Página de um Tópico Específico
+
+As páginas de tópico específico possuirão dois layouts distintos: Desktop e mobile. O Layout de desktop deverá ser aplicado enquanto a largura do browser for superior a 768 pixels. Já o layout mobile deverá ser aplicado para as resoluções de Tablet e Desktop.
+
+<img src="images/topico-d.png" width="65%"/>
+<img src="images/topico-m.png" width="34%"/>
+
+No layout Desktop, é importante notar que o conteúdo da página está centralizado, com uma margem considerável entre conteúdo e browser. Ainda, deve-se perceber que, para cada notícia, a mesma deverá ser apresentada com uma foto e seu título lado-a-lado. Ao se passar o mouse em cima da foto, um texto com o subtítulo deverá ser exibido.
+
+Ja no layout mobile, o título da notícia passará a ficar após a foto, e não lado-a-lado (como era no desktop).
+
+Por fim, assim como na página principal, cada tópico deverá ter a cor base definida de acordo com o tópico de interesse. Isto é, as cores da fonte, e outros detalhes do tópico deverão acompanhar a tonalidade escolhida.
+
+### 4.0 - Página da Notícia
+
+A página da notícia foi inspirada no estilo presente no site [medium](http://medium.com). Segue abaixo um protótipo da página de notícias:
+
+[![Noticia](images/noticia-d.png)](images/noticia-d.png)
+
+O título da notícia deverá ser centralizado, com um espaçamento considerável do topo de seu container. O subtítulo por sua vez deverá ter um espaçamento vertical visível a partir do título da página. Ainda, recomenda-se que seja definida uma fonte não serifada para o título da notícia (Trebuchet MS ou Arial, por exemplo).
+
+Além disso, Títulos e subtítulos deverão estar sobre uma imagem de fundo, que irá representar um tópico relacionado a notícia. Essa imagem de fundo deverá ocupar toda a largura do browser, independente da resolução. As [imagens de fundo](http://lorempixel.com/1400/600/) deverão possuir uma proporção de 1400/600\. Ainda, deve-se aplicar um efeito para [escurecer](http://jsfiddle.net/6bjTQ/) as imagens. Como o título da notícia ficará sobre uma imagem escurecida, ambos os elementos (título e subtítulo) deverão definir a cor da fonte como branca. Ainda, o título deverá estar em negrito.
+
+
+Com relação ao texto da notícia, deverá ser adotada uma fonte serifada (ex: Georgia), e seu tamanho padrão deverá ser de 22 pixels. A primeira letra do primeiro parágrafo deverá receber um estilo personalizado: Seu tamanho deverá ser 3 vezes maior ao tamanho da fonte da notícia.
+
+Além disso, Deverá haver um espaçamento entre os parágrafos equivalente a 1,5 linhas de texto.
 
 ## Consulta
 
