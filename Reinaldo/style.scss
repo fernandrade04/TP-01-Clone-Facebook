@@ -1,0 +1,55 @@
+//paleta
+$fundoMenu: #2bf;
+$fundoContainer: #eff;
+$colorWeb: #8AC007;
+$colorMobile: #b51110;
+$colorElearning: #2a3744;
+
+
+$alturaMenu: 40px;
+body{margin: 0%}
+.container{margin: auto;padding-top: $alturaMenu; width: 95%; background-color: $fundoContainer} //tem que usar a largura toda
+header{width: 100%;position: fixed;background-color: $fundoMenu;padding: 5px}
+
+header{
+    img{float: left}
+    label{float: left}
+    a{float: right}
+    *{height: $alturaMenu;padding-left: 5px;padding-right: 5px;box-sizing: border-box;background-color: darken($fundoMenu, 10%)}
+}
+
+p{padding: 1%}
+
+#noticiaWeb *{color: $colorWeb}
+#noticiaMobile *{color: $colorMobile}
+#noticiaElearning *{color: $colorElearning}
+
+.foto:hover{
+    transform: scale(2,2);
+}
+
+//variaveis de tamanho para layout de colunas
+$tamCelular: 560px;
+$tamTablet: 1199px;
+$tamDesktop: 1200px;
+$colunas: 16;
+@media screen and (min-width: $tamDesktop){
+    .col0d{width: 0%;display: none;float: left}
+    @for $i from 1 to $colunas+1{
+        .col#{$i}d{ width: 100% / $colunas * $i; float: left; box-sizing: border-box;}
+    }
+}
+@media screen and (max-width: $tamTablet) and (min-width: $tamCelular + 1px){
+    .col0t{width: 0%;display: none;float: left}
+    @for $i from 1 to 16{
+        .col#{$i}t{ width: 100% / $colunas * $i; float: left; box-sizing: border-box;}
+    }
+}
+@media screen and (max-width: $tamCelular){
+    .col0c{width: 0%;display: none;float: left}
+    @for $i from 1 to 16{
+        .col#{$i}c{ width: 100% / $colunas * $i; float: left; box-sizing: border-box;}
+    }
+}
+
+.paraDireita{float: right}
