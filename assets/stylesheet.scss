@@ -1,0 +1,104 @@
+$numCol: 16;
+
+$color-web: #8AC007;
+$color-mobile: #b51110;
+$color-eLearning: #2a3744;
+
+$font1: 'Montserrat', sans-serif;
+$font2: 'IBM Plex Serif', serif;
+
+$fontsize1: 1em;
+$fontsize2: 1em;
+
+
+#canvas{
+    padding: 0px 2% 0px 2%;
+}
+
+#header{
+    background-color: rgb(33, 33, 33);
+    font-family: $font2;
+
+}
+#logo{
+    max-height: 50%;
+    max-width: 50%;
+}
+#destaque{
+    padding-top: 80px;
+    font-family: $font2;
+}
+
+#noticias{
+    font-size: $fontsize2;
+    font-family: $font1;
+}
+#mainImg {
+  max-height: 50%;
+  max-width: 50%;
+}
+
+#logo{
+    width: 40px;
+}
+
+#web{
+    color: $color-web;
+}
+#mobile{
+    color: $color-mobile
+}
+#eLearning{
+    color: $color-eLearning;
+}
+
+.text{
+    text-align: center;
+}
+.headerElements{
+    display: inline;
+    text-align: center;
+}
+
+img{
+    &:hover{
+        transform: scale(1.1, 1.1);
+    }
+}
+hr{
+    margin: 60px 0px 60px 0px;
+}
+@mixin multiple_column_size($size) {
+	@for $i from 1 to $numCol + 1 {
+		.col-#{$size}-#{$i} {
+            width: (($i/$numCol *100)* 1%);
+			float: left;
+        }
+        .offset-#{$size}-#{$i} {
+            padding-left: (($i/$numCol *100)* 1%);
+        }
+
+	}
+    .col-#{$size}-0{
+        display: none;
+    }
+}
+
+
+/* DESKTOP */
+@media screen and (min-width: 1200px) {
+	@include multiple_column_size(g);
+
+}
+
+/* TABLET */
+@media screen and (min-width: 560px) and (max-width: 1199px) {
+	@include multiple_column_size(m);
+
+}
+
+/* SMARTPHONE */
+@media screen and (max-width: 559px) {
+	@include multiple_column_size(p);
+
+}

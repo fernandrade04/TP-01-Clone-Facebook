@@ -1,0 +1,364 @@
+#logo{
+	max-width: 5%;
+}
+
+#title{
+    font-size: 2.2em;
+}
+#header {
+  background-color: #212121;
+  font-family: "IBM Plex Serif", serif;
+}
+#canvas{
+	padding: 2%;
+}
+.web {
+  color: #8AC007;
+}
+
+.noticia{
+	margin-top: 15px;
+	margin-bottom: 30px;
+	font-size: 100%;
+}
+.mobile {
+  color: #b51110;
+}
+
+.eLearning {
+  color: #2a3744;
+}
+
+.textoNoticia{
+	margin-top: 30px;
+}
+.text{
+	text-align: center;
+}
+
+.button {
+	margin-top: 30px;
+	font-size: 100%;
+}
+.line{
+	margin-top: 60px;
+    margin-bottom: 40px;
+}
+
+.img{
+	max-width: 25%;
+	max-height: 25%;
+}
+img:hover {
+  transform: scale(1.1, 1.1);
+}
+
+a{
+	color: inherit;
+}
+
+/* DESKTOP */
+@media screen and (min-width: 768px) {
+
+  .col-g-1 {
+    width: 6.25%;
+    float: left;
+  }
+
+  .offset-g-1 {
+    padding-left: 6.25%;
+  }
+
+  .col-g-2 {
+    width: 12.5%;
+    float: left;
+  }
+
+  .offset-g-2 {
+    padding-left: 12.5%;
+  }
+
+  .col-g-3 {
+    width: 18.75%;
+    float: left;
+  }
+
+  .offset-g-3 {
+    padding-left: 18.75%;
+  }
+
+  .col-g-4 {
+    width: 25%;
+    float: left;
+  }
+
+  .offset-g-4 {
+    padding-left: 25%;
+  }
+
+  .col-g-5 {
+    width: 31.25%;
+    float: left;
+  }
+
+  .offset-g-5 {
+    padding-left: 31.25%;
+  }
+
+  .col-g-6 {
+    width: 37.5%;
+    float: left;
+  }
+
+  .offset-g-6 {
+    padding-left: 37.5%;
+  }
+
+  .col-g-7 {
+    width: 43.75%;
+    float: left;
+  }
+
+  .offset-g-7 {
+    padding-left: 43.75%;
+  }
+
+  .col-g-8 {
+    width: 50%;
+    float: left;
+  }
+
+  .offset-g-8 {
+    padding-left: 50%;
+  }
+
+  .col-g-9 {
+    width: 56.25%;
+    float: left;
+  }
+
+  .offset-g-9 {
+    padding-left: 56.25%;
+  }
+
+  .col-g-10 {
+    width: 62.5%;
+    float: left;
+  }
+
+  .offset-g-10 {
+    padding-left: 62.5%;
+  }
+
+  .col-g-11 {
+    width: 68.75%;
+    float: left;
+  }
+
+  .offset-g-11 {
+    padding-left: 68.75%;
+  }
+
+  .col-g-12 {
+    width: 75%;
+    float: left;
+  }
+
+  .offset-g-12 {
+    padding-left: 75%;
+  }
+
+  .col-g-13 {
+    width: 81.25%;
+    float: left;
+  }
+
+  .offset-g-13 {
+    padding-left: 81.25%;
+  }
+
+  .col-g-14 {
+    width: 87.5%;
+    float: left;
+  }
+
+  .offset-g-14 {
+    padding-left: 87.5%;
+  }
+
+  .col-g-15 {
+    width: 93.75%;
+    float: left;
+  }
+
+  .offset-g-15 {
+    padding-left: 93.75%;
+  }
+
+  .col-g-16 {
+    width: 100%;
+    float: left;
+  }
+
+  .offset-g-16 {
+    padding-left: 100%;
+  }
+
+  .col-g-0 {
+    display: none;
+  }
+}
+/* SMARTPHONE */
+@media screen and (max-width: 767px) {
+	.img{
+		max-width: 25%;
+		max-height: 25%;
+	}
+  .col-p-1 {
+    width: 6.25%;
+    float: left;
+  }
+
+  .offset-p-1 {
+    padding-left: 6.25%;
+  }
+
+  .col-p-2 {
+    width: 12.5%;
+    float: left;
+  }
+
+  .offset-p-2 {
+    padding-left: 12.5%;
+  }
+
+  .col-p-3 {
+    width: 18.75%;
+    float: left;
+  }
+
+  .offset-p-3 {
+    padding-left: 18.75%;
+  }
+
+  .col-p-4 {
+    width: 25%;
+    float: left;
+  }
+
+  .offset-p-4 {
+    padding-left: 25%;
+  }
+
+  .col-p-5 {
+    width: 31.25%;
+    float: left;
+  }
+
+  .offset-p-5 {
+    padding-left: 31.25%;
+  }
+
+  .col-p-6 {
+    width: 37.5%;
+    float: left;
+  }
+
+  .offset-p-6 {
+    padding-left: 37.5%;
+  }
+
+  .col-p-7 {
+    width: 43.75%;
+    float: left;
+  }
+
+  .offset-p-7 {
+    padding-left: 43.75%;
+  }
+
+  .col-p-8 {
+    width: 50%;
+    float: left;
+  }
+
+  .offset-p-8 {
+    padding-left: 50%;
+  }
+
+  .col-p-9 {
+    width: 56.25%;
+    float: left;
+  }
+
+  .offset-p-9 {
+    padding-left: 56.25%;
+  }
+
+  .col-p-10 {
+    width: 62.5%;
+    float: left;
+  }
+
+  .offset-p-10 {
+    padding-left: 62.5%;
+  }
+
+  .col-p-11 {
+    width: 68.75%;
+    float: left;
+  }
+
+  .offset-p-11 {
+    padding-left: 68.75%;
+  }
+
+  .col-p-12 {
+    width: 75%;
+    float: left;
+  }
+
+  .offset-p-12 {
+    padding-left: 75%;
+  }
+
+  .col-p-13 {
+    width: 81.25%;
+    float: left;
+  }
+
+  .offset-p-13 {
+    padding-left: 81.25%;
+  }
+
+  .col-p-14 {
+    width: 87.5%;
+    float: left;
+  }
+
+  .offset-p-14 {
+    padding-left: 87.5%;
+  }
+
+  .col-p-15 {
+    width: 93.75%;
+    float: left;
+  }
+
+  .offset-p-15 {
+    padding-left: 93.75%;
+  }
+
+  .col-p-16 {
+    width: 100%;
+    float: left;
+  }
+
+  .offset-p-16 {
+    padding-left: 100%;
+  }
+
+  .col-p-0 {
+    display: none;
+  }
+}
