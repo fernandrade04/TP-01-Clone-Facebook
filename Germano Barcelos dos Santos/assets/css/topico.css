@@ -1,0 +1,467 @@
+@import url("https://fonts.googleapis.com/css?family=Montserrat:300|Raleway:300");
+h1, h2, h3, h4, h5, h6 {
+  font-family: "Montserrat", sans-serif;
+}
+
+.text-color-web a {
+  color: #BA2F38;
+}
+
+.text-color-mobile a {
+  color: #205D75;
+}
+
+.text-color-eLearning a {
+  color: #BA782F;
+}
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #F0EFED;
+  font-family: "Montserrat", sans-serif;
+}
+ul li {
+  float: left;
+  padding: 1%;
+}
+ul li a {
+  display: block;
+  color: black;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+ul li a:hover:not(.active) {
+  background-color: gray;
+}
+ul .active {
+  background-color: gray;
+}
+
+#main-container {
+  background-color: #F0EFED;
+}
+
+#noticia-destaque img {
+  width: 100%;
+  height: 100%;
+}
+#noticia-destaque p {
+  text-align: justify;
+}
+
+.noticia-web p {
+  color: #BA2F38;
+  text-align: justify;
+}
+.noticia-web h1, .noticia-web h2, .noticia-web h3 {
+  color: #E33944;
+  text-align: center;
+}
+
+.noticia-mobile p {
+  color: #205D75;
+  text-align: justify;
+}
+.noticia-mobile h1, .noticia-mobile h2, .noticia-mobile h3 {
+  color: #1F6F8F;
+  text-align: center;
+}
+
+.noticia-eLearning p {
+  color: #BA782F;
+  text-align: justify;
+}
+.noticia-eLearning h1, .noticia-eLearning h2, .noticia-eLearning h3 {
+  color: #FFB059;
+  text-align: center;
+}
+
+img {
+  -moz-transition: all 1s;
+  -webkit-transition: all 1s;
+  transition: all 1s;
+}
+
+img:hover {
+  -webkit-filter: grayscale(100%);
+  filter: grayscale(100%);
+}
+
+@media screen and (max-width: 768px) {
+  .col-m1 {
+    width: 4.25%;
+    float: left;
+    padding: 1%;
+    overflow: hidden;
+  }
+
+  .offset-m1 {
+    margin-left: 48.875%;
+  }
+
+  .col-m2 {
+    width: 10.5%;
+    float: left;
+    padding: 1%;
+    overflow: hidden;
+  }
+
+  .offset-m2 {
+    margin-left: 45.75%;
+  }
+
+  .col-m3 {
+    width: 16.75%;
+    float: left;
+    padding: 1%;
+    overflow: hidden;
+  }
+
+  .offset-m3 {
+    margin-left: 42.625%;
+  }
+
+  .col-m4 {
+    width: 23%;
+    float: left;
+    padding: 1%;
+    overflow: hidden;
+  }
+
+  .offset-m4 {
+    margin-left: 39.5%;
+  }
+
+  .col-m5 {
+    width: 29.25%;
+    float: left;
+    padding: 1%;
+    overflow: hidden;
+  }
+
+  .offset-m5 {
+    margin-left: 36.375%;
+  }
+
+  .col-m6 {
+    width: 35.5%;
+    float: left;
+    padding: 1%;
+    overflow: hidden;
+  }
+
+  .offset-m6 {
+    margin-left: 33.25%;
+  }
+
+  .col-m7 {
+    width: 41.75%;
+    float: left;
+    padding: 1%;
+    overflow: hidden;
+  }
+
+  .offset-m7 {
+    margin-left: 30.125%;
+  }
+
+  .col-m8 {
+    width: 48%;
+    float: left;
+    padding: 1%;
+    overflow: hidden;
+  }
+
+  .offset-m8 {
+    margin-left: 27%;
+  }
+
+  .col-m9 {
+    width: 54.25%;
+    float: left;
+    padding: 1%;
+    overflow: hidden;
+  }
+
+  .offset-m9 {
+    margin-left: 23.875%;
+  }
+
+  .col-m10 {
+    width: 60.5%;
+    float: left;
+    padding: 1%;
+    overflow: hidden;
+  }
+
+  .offset-m10 {
+    margin-left: 20.75%;
+  }
+
+  .col-m11 {
+    width: 66.75%;
+    float: left;
+    padding: 1%;
+    overflow: hidden;
+  }
+
+  .offset-m11 {
+    margin-left: 17.625%;
+  }
+
+  .col-m12 {
+    width: 73%;
+    float: left;
+    padding: 1%;
+    overflow: hidden;
+  }
+
+  .offset-m12 {
+    margin-left: 14.5%;
+  }
+
+  .col-m13 {
+    width: 79.25%;
+    float: left;
+    padding: 1%;
+    overflow: hidden;
+  }
+
+  .offset-m13 {
+    margin-left: 11.375%;
+  }
+
+  .col-m14 {
+    width: 85.5%;
+    float: left;
+    padding: 1%;
+    overflow: hidden;
+  }
+
+  .offset-m14 {
+    margin-left: 8.25%;
+  }
+
+  .col-m15 {
+    width: 91.75%;
+    float: left;
+    padding: 1%;
+    overflow: hidden;
+  }
+
+  .offset-m15 {
+    margin-left: 5.125%;
+  }
+
+  .col-m16 {
+    width: 98%;
+    float: left;
+    padding: 1%;
+    overflow: hidden;
+  }
+
+  .offset-m16 {
+    margin-left: 2%;
+  }
+
+  #menu-right {
+    float: right;
+  }
+
+  #menu-left {
+    float: left;
+  }
+
+  .hiding-title {
+    display: none;
+  }
+}
+@media screen and (min-width: 769px) {
+  .col-l1 {
+    width: 4.25%;
+    float: left;
+    padding: 1%;
+    overflow: hidden;
+  }
+
+  .offset-l1 {
+    margin-left: 48.875%;
+  }
+
+  .col-l2 {
+    width: 10.5%;
+    float: left;
+    padding: 1%;
+    overflow: hidden;
+  }
+
+  .offset-l2 {
+    margin-left: 45.75%;
+  }
+
+  .col-l3 {
+    width: 16.75%;
+    float: left;
+    padding: 1%;
+    overflow: hidden;
+  }
+
+  .offset-l3 {
+    margin-left: 42.625%;
+  }
+
+  .col-l4 {
+    width: 23%;
+    float: left;
+    padding: 1%;
+    overflow: hidden;
+  }
+
+  .offset-l4 {
+    margin-left: 39.5%;
+  }
+
+  .col-l5 {
+    width: 29.25%;
+    float: left;
+    padding: 1%;
+    overflow: hidden;
+  }
+
+  .offset-l5 {
+    margin-left: 36.375%;
+  }
+
+  .col-l6 {
+    width: 35.5%;
+    float: left;
+    padding: 1%;
+    overflow: hidden;
+  }
+
+  .offset-l6 {
+    margin-left: 33.25%;
+  }
+
+  .col-l7 {
+    width: 41.75%;
+    float: left;
+    padding: 1%;
+    overflow: hidden;
+  }
+
+  .offset-l7 {
+    margin-left: 30.125%;
+  }
+
+  .col-l8 {
+    width: 48%;
+    float: left;
+    padding: 1%;
+    overflow: hidden;
+  }
+
+  .offset-l8 {
+    margin-left: 27%;
+  }
+
+  .col-l9 {
+    width: 54.25%;
+    float: left;
+    padding: 1%;
+    overflow: hidden;
+  }
+
+  .offset-l9 {
+    margin-left: 23.875%;
+  }
+
+  .col-l10 {
+    width: 60.5%;
+    float: left;
+    padding: 1%;
+    overflow: hidden;
+  }
+
+  .offset-l10 {
+    margin-left: 20.75%;
+  }
+
+  .col-l11 {
+    width: 66.75%;
+    float: left;
+    padding: 1%;
+    overflow: hidden;
+  }
+
+  .offset-l11 {
+    margin-left: 17.625%;
+  }
+
+  .col-l12 {
+    width: 73%;
+    float: left;
+    padding: 1%;
+    overflow: hidden;
+  }
+
+  .offset-l12 {
+    margin-left: 14.5%;
+  }
+
+  .col-l13 {
+    width: 79.25%;
+    float: left;
+    padding: 1%;
+    overflow: hidden;
+  }
+
+  .offset-l13 {
+    margin-left: 11.375%;
+  }
+
+  .col-l14 {
+    width: 85.5%;
+    float: left;
+    padding: 1%;
+    overflow: hidden;
+  }
+
+  .offset-l14 {
+    margin-left: 8.25%;
+  }
+
+  .col-l15 {
+    width: 91.75%;
+    float: left;
+    padding: 1%;
+    overflow: hidden;
+  }
+
+  .offset-l15 {
+    margin-left: 5.125%;
+  }
+
+  .col-l16 {
+    width: 98%;
+    float: left;
+    padding: 1%;
+    overflow: hidden;
+  }
+
+  .offset-l16 {
+    margin-left: 2%;
+  }
+
+  #menu-right {
+    float: right;
+  }
+
+  #menu-left {
+    float: left;
+  }
+}
