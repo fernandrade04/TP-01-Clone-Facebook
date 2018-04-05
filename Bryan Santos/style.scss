@@ -1,0 +1,118 @@
+
+
+/***** OBSS: Alguma coisa deu errado nesse código que está mudando o estilo da página, então João, analise a página com o CSS, e olhe este SASS para ver o que eu fiz mesmo. Não consegui encontrar esse erro :( ******/
+
+
+// Fontes
+@import url('https://fonts.googleapis.com/css?family=Roboto');
+$fonte: 'Roboto', sans-serif;
+
+// Cores utilizadas
+$cor-web: red;
+$cor-mobile: blue;
+$cor-learning: green;
+$branco: white;
+$cor-menu: #d3d3d3;
+
+// Largura mínima de desktop
+$desktop: 1200px; 
+
+// Largura máxima pra tablets
+$tablet: 1999px;
+
+// Largura máxima pra mobile
+$mobile: 560px;
+
+// Linha
+.row { 
+  display: block;
+  clear: both;
+  padding-top: 40px;
+}
+
+// Layout de colunas - l (large) - Desktop
+@media screen and (min-width: $desktop) {
+  @for $i from 1 to 17 {
+    .col-l#{$i} { width: 6.25% * $i; float: left; }
+  }
+  
+  @for $i from 1 to 17 {
+    .offset-l#{$i} { padding-left: 6.25% * $i }
+  }
+  
+  .align-right-l { float: right !important }
+  
+}
+
+// Layout de colunas - m (medium) - Tablets
+@media screen and (max-width: $tablet) {
+  @for $i from 1 to 17 {
+    .col-m#{$i} { width: 6.25% * $i; float: left;}
+  }
+  
+  @for $i from 1 to 17 {
+    .offset-m#{$i} { padding-left: 6.25% * $i }
+  }
+  
+  .align-left { float: left !important }
+  
+  .disabled-on-m { position: absolute; left: -9999px; }
+}
+
+// Layout de colunas - s (short) - Mobile
+@media screen and (max-width: $mobile) {
+  @for $i from 1 to 17 {
+    .col-s#{$i} { width: 6.25% * $i; float: left;}
+  }
+  
+  @for $i from 1 to 17 {
+    .offset-s#{$i} { padding-left: 6.25% * $i }
+  }
+  
+  .align-left { float: left !important }
+  
+  .disabled-on-s { position: absolute; left: -9999px; }
+}
+
+.align-center {text-align: center};
+
+body { font-family: $fonte; }
+
+a { text-decoration: none; color: $branco;}
+
+#titulo {
+  color: black;
+  padding-top: 1%;
+}
+#web    {
+  color: $cor-web;
+  padding-top: 1%;
+}
+#mobile {
+  color: $cor-mobile;
+  padding-top: 1%;
+}
+#el     {
+  color: $cor-learning;
+  padding-top: 1%;
+}
+
+#menu { 
+  background-color: $cor-menu ;
+  list-style: none;
+  margin-bottom: 4%;
+}
+
+#menu li {
+  display: inline-block;
+  margin-top: 40px;
+  color: $branco;
+}
+
+#noticia-do-dia {
+  text-align: center;
+}
+
+#noticias {
+  margin-top: 4%;
+}

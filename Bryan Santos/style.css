@@ -1,0 +1,518 @@
+@import url("https://fonts.googleapis.com/css?family=Roboto");
+
+.row {
+  display: block;
+  clear: both;
+  padding-top: 40px
+}
+
+@media screen and (min-width: 1200px) {
+  .col-l1 {
+    width: 6.25%;
+    float: left;
+  }
+
+  .col-l2 {
+    width: 12.5%;
+    float: left;
+  }
+
+  .col-l3 {
+    width: 18.75%;
+    float: left;
+  }
+
+  .col-l4 {
+    width: 25%;
+    float: left;
+  }
+
+  .col-l5 {
+    width: 31.25%;
+    float: left;
+  }
+
+  .col-l6 {
+    width: 37.5%;
+    float: left;
+  }
+
+  .col-l7 {
+    width: 43.75%;
+    float: left;
+  }
+
+  .col-l8 {
+    width: 50%;
+    float: left;
+  }
+
+  .col-l9 {
+    width: 56.25%;
+    float: left;
+  }
+
+  .col-l10 {
+    width: 62.5%;
+    float: left;
+  }
+
+  .col-l11 {
+    width: 68.75%;
+    float: left;
+  }
+
+  .col-l12 {
+    width: 75%;
+    float: left;
+  }
+
+  .col-l13 {
+    width: 81.25%;
+    float: left;
+  }
+
+  .col-l14 {
+    width: 87.5%;
+    float: left;
+  }
+
+  .col-l15 {
+    width: 93.75%;
+    float: left;
+  }
+
+  .col-l16 {
+    width: 100%;
+    float: left;
+  }
+
+  .offset-l1 {
+    padding-left: 6.25%;
+  }
+
+  .offset-l2 {
+    padding-left: 12.5%;
+  }
+
+  .offset-l3 {
+    padding-left: 18.75%;
+  }
+
+  .offset-l4 {
+    padding-left: 25%;
+  }
+
+  .offset-l5 {
+    padding-left: 31.25%;
+  }
+
+  .offset-l6 {
+    padding-left: 37.5%;
+  }
+
+  .offset-l7 {
+    padding-left: 43.75%;
+  }
+
+  .offset-l8 {
+    padding-left: 50%;
+  }
+
+  .offset-l9 {
+    padding-left: 56.25%;
+  }
+
+  .offset-l10 {
+    padding-left: 62.5%;
+  }
+
+  .offset-l11 {
+    padding-left: 68.75%;
+  }
+
+  .offset-l12 {
+    padding-left: 75%;
+  }
+
+  .offset-l13 {
+    padding-left: 81.25%;
+  }
+
+  .offset-l14 {
+    padding-left: 87.5%;
+  }
+
+  .offset-l15 {
+    padding-left: 93.75%;
+  }
+
+  .offset-l16 {
+    padding-left: 100%;
+  }
+
+  .align-right-l {
+    float: right !important;
+  }
+}
+@media screen and (max-width: 1199px) {
+  .col-m1 {
+    width: 6.25%;
+    float: left;
+  }
+
+  .col-m2 {
+    width: 12.5%;
+    float: left;
+  }
+
+  .col-m3 {
+    width: 18.75%;
+    float: left;
+  }
+
+  .col-m4 {
+    width: 25%;
+    float: left;
+  }
+
+  .col-m5 {
+    width: 31.25%;
+    float: left;
+  }
+
+  .col-m6 {
+    width: 37.5%;
+    float: left;
+  }
+
+  .col-m7 {
+    width: 43.75%;
+    float: left;
+  }
+
+  .col-m8 {
+    width: 50%;
+    float: left;
+  }
+
+  .col-m9 {
+    width: 56.25%;
+    float: left;
+  }
+
+  .col-m10 {
+    width: 62.5%;
+    float: left;
+  }
+
+  .col-m11 {
+    width: 68.75%;
+    float: left;
+  }
+
+  .col-m12 {
+    width: 75%;
+    float: left;
+  }
+
+  .col-m13 {
+    width: 81.25%;
+    float: left;
+  }
+
+  .col-m14 {
+    width: 87.5%;
+    float: left;
+  }
+
+  .col-m15 {
+    width: 93.75%;
+    float: left;
+  }
+
+  .col-m16 {
+    width: 100%;
+    float: left;
+  }
+
+  .offset-m1 {
+    padding-left: 6.25%;
+  }
+
+  .offset-m2 {
+    padding-left: 12.5%;
+  }
+
+  .offset-m3 {
+    padding-left: 18.75%;
+  }
+
+  .offset-m4 {
+    padding-left: 25%;
+  }
+
+  .offset-m5 {
+    padding-left: 31.25%;
+  }
+
+  .offset-m6 {
+    padding-left: 37.5%;
+  }
+
+  .offset-m7 {
+    padding-left: 43.75%;
+  }
+
+  .offset-m8 {
+    padding-left: 50%;
+  }
+
+  .offset-m9 {
+    padding-left: 56.25%;
+  }
+
+  .offset-m10 {
+    padding-left: 62.5%;
+  }
+
+  .offset-m11 {
+    padding-left: 68.75%;
+  }
+
+  .offset-m12 {
+    padding-left: 75%;
+  }
+
+  .offset-m13 {
+    padding-left: 81.25%;
+  }
+
+  .offset-m14 {
+    padding-left: 87.5%;
+  }
+
+  .offset-m15 {
+    padding-left: 93.75%;
+  }
+
+  .offset-m16 {
+    padding-left: 100%;
+  }
+
+  .align-left {
+    float: left !important;
+  }
+
+  .disabled-on-m {
+    position: absolute;
+    left: -9999px;
+  }
+}
+@media screen and (max-width: 560px) {
+  .col-s1 {
+    width: 6.25%;
+    float: left;
+  }
+
+  .col-s2 {
+    width: 12.5%;
+    float: left;
+  }
+
+  .col-s3 {
+    width: 18.75%;
+    float: left;
+  }
+
+  .col-s4 {
+    width: 25%;
+    float: left;
+  }
+
+  .col-s5 {
+    width: 31.25%;
+    float: left;
+  }
+
+  .col-s6 {
+    width: 37.5%;
+    float: left;
+  }
+
+  .col-s7 {
+    width: 43.75%;
+    float: left;
+  }
+
+  .col-s8 {
+    width: 50%;
+    float: left;
+  }
+
+  .col-s9 {
+    width: 56.25%;
+    float: left;
+  }
+
+  .col-s10 {
+    width: 62.5%;
+    float: left;
+  }
+
+  .col-s11 {
+    width: 68.75%;
+    float: left;
+  }
+
+  .col-s12 {
+    width: 75%;
+    float: left;
+  }
+
+  .col-s13 {
+    width: 81.25%;
+    float: left;
+  }
+
+  .col-s14 {
+    width: 87.5%;
+    float: left;
+  }
+
+  .col-s15 {
+    width: 93.75%;
+    float: left;
+  }
+
+  .col-s16 {
+    width: 100%;
+    float: left;
+  }
+
+  .offset-s1 {
+    padding-left: 6.25%;
+  }
+
+  .offset-s2 {
+    padding-left: 12.5%;
+  }
+
+  .offset-s3 {
+    padding-left: 18.75%;
+  }
+
+  .offset-s4 {
+    padding-left: 25%;
+  }
+
+  .offset-s5 {
+    padding-left: 31.25%;
+  }
+
+  .offset-s6 {
+    padding-left: 37.5%;
+  }
+
+  .offset-s7 {
+    padding-left: 43.75%;
+  }
+
+  .offset-s8 {
+    padding-left: 50%;
+  }
+
+  .offset-s9 {
+    padding-left: 56.25%;
+  }
+
+  .offset-s10 {
+    padding-left: 62.5%;
+  }
+
+  .offset-s11 {
+    padding-left: 68.75%;
+  }
+
+  .offset-s12 {
+    padding-left: 75%;
+  }
+
+  .offset-s13 {
+    padding-left: 81.25%;
+  }
+
+  .offset-s14 {
+    padding-left: 87.5%;
+  }
+
+  .offset-s15 {
+    padding-left: 93.75%;
+  }
+
+  .offset-s16 {
+    padding-left: 100%;
+  }
+
+  .align-left {
+    float: left !important;
+  }
+
+  .disabled-on-s {
+    position: absolute;
+    left: -9999px;
+  }
+}
+
+.align-center {
+    text-align: center
+}
+
+
+body {
+  font-family: "Roboto", sans-serif;
+}
+
+a {
+  text-decoration: none;
+  color: white;
+}
+
+#titulo {
+  color: black;
+  padding-top: 1%;
+}
+
+#web {
+  color: red;
+  padding-top: 1%;
+}
+
+#mobile {
+  color: blue;
+  padding-top: 1%;
+}
+
+#el {
+  color: green;
+  padding-top: 1%;
+}
+
+#menu {
+  background-color: #d3d3d3;
+  list-style: none;
+  margin-bottom: 4%;
+}
+
+#menu li {
+  display: inline-block;
+  color: white;
+}
+
+#noticia-do-dia {
+  text-align: center;
+}
+
+#noticias {
+  margin-top: 4%;
+}
