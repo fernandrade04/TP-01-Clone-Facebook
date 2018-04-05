@@ -1,0 +1,183 @@
+@media screen and (min-width: 1200px) {
+   
+    .col-5l {
+        width: 31.25%;
+        /* width: 30.3%;   */   
+    }
+
+    .col-10l {
+        width: 62.5%;
+    }
+
+    .col-16l {
+        width: 100%;
+    }
+    .col-5, .col-10l,.col-16l{
+        float: left;
+    }
+}
+
+@media screen and (min-width: 560px) and (max-width: 768px) {
+    
+    body{
+        max-width: 100%;
+        font-size: 60%;
+    }
+    .titlem{
+        margin-left: 5%;
+        max-width: 12%;
+    }
+    .logo{
+        display: none;
+    }
+    .col-10m{
+        width: 60%;
+    }
+    .col-5m{
+        width:48%;
+        padding: 1%;
+    }
+    destaque{
+        max-width: 60%;
+    }
+    .col-16m{
+        width: 100%;
+    }
+    #e{
+        display: inline;
+    }
+    .col-3m{
+        width: 33%; 
+    }
+    
+}
+
+@media screen and (max-width:560px) {
+   body{
+       font-size: 50%;
+   }
+   .col-5{
+       width:100%;
+   }
+   .col-10{
+       width: 100%;
+   }
+   #title1{
+       display: none;
+   }
+    
+}
+    /* ID */
+
+#destaque{
+    margin-left: 6.25%;
+    max-width: 100%;
+    float: left;
+}
+
+#web{
+    color: tomato;
+    margin-left: 6.25%;
+}
+
+#mobile{
+    color: steelblue;
+}
+#eLearning{
+    color: seagreen;
+}
+
+
+    /* CLASSES */
+
+div{
+    font-family:'Roboto', sans-serif;
+}
+
+.logo{
+    margin-top: 1%;
+    float: left;
+}
+
+.noticia-titulo{
+    margin-right: 6.25%;
+    max-width: 31.25%;
+    float:right;
+}
+
+.title{
+    margin-left: 6.25%;
+    font-family: 'Roboto', sans-serif;
+    display: inline-block;
+}
+
+    /*COLUNAS*/
+
+.col-1 {
+width: 6.25%;
+}
+
+.col-2 {
+width: 12.5%;
+}
+
+.col-3 {
+width: 18.75%;
+}
+
+.col-4 {
+width: 25%;
+}
+
+.col-5 {
+width: 31.25%;
+/* width: 30.3%;   */   
+}
+
+.col-6 {
+width: 37.5%;
+}
+
+.col-7 {
+width: 43.75%;
+}
+
+.col-8 {
+width: 50%;
+}
+
+.col-9 {
+width: 56.25%;
+}
+
+.col-10 {
+width: 62.5%;
+}
+
+.col-11 {
+width: 68.75%;
+}
+
+.col-12 {
+width: 75%;
+}
+
+.col-13 {
+width: 81.25%;
+}
+
+.col-14 {
+width: 87.5%;
+}
+
+.col-15 {
+width: 93.75%;
+}
+
+.col-16 {
+width: 100%;
+}
+
+.col-1, .col-2, .col-3, .col-4, .col-5, .col-6, .col-7, .col-8, .col-9, .col-10, .col-11, .col-12,.col-13,.col-14,.col-15,.col-16 {
+    float: left;    
+}
