@@ -1,0 +1,206 @@
+body{
+  font-size: 100%;
+  overflow-x: hidden;
+}
+p{
+  text-align: justify;
+}
+h1{
+  text-align: center;
+}
+img, embed, object, video {
+  max-width: 100%;
+}
+.clearfix:after{
+  content: "";
+  clear: both;
+  display: table;
+}
+
+.offset{
+  padding-left: 2%;
+}
+
+.menu{
+  a:link, a:hover, a:visited, a:active{
+    color: black;
+  }
+  h3:hover{
+    transform: scale(1.1);
+  }
+  position: fixed;
+  background-color: gray;
+  margin: 5%;
+  padding: 5%;
+  top: 0;
+  display: block;
+  img, h1{
+    float: left;
+  }
+  h3{
+    float: right;
+    width: percentage(0.5/3);
+  }
+  h1{
+    text-align: center;
+  }
+}
+
+$fontColorn1: #8AC007;
+$fontColorn2: #b51110;
+$fontColorn3: #2a3744;
+
+.container1{
+  .destaque{
+    margin: 5%;
+    img{
+      width: 60%;
+      float: left;
+    }
+    h1{
+      width: 40%;
+      float: right;
+    }
+  }
+  .noticias{
+    img{
+      width: 30%;
+      float: left;
+      padding: 5%;
+    }
+    h1{
+      float: left;
+      width: 55%;
+    }
+  }
+  
+  .noticias, .destaque{
+    img:hover{
+      transform: scale(1.2);
+    }
+  }
+  
+  #n1{
+    a:link, a:hover, a:visited, a:active{
+      color: $fontColorn1;
+    }
+    color: $fontColorn1;
+    img:hover{
+      border: 2px solid;
+      border-radius: 25px;
+      border-color: $fontColorn1;
+    }
+  }
+  #n2{
+    a:link, a:hover, a:visited, a:active{
+      color: $fontColorn2;
+    }
+    color: $fontColorn2;
+    img:hover{
+      border: 2px solid;
+      border-radius: 25px;
+      border-color: $fontColorn2;
+    }
+  }
+  #n3{
+    a:link, a:hover, a:visited, a:active{
+      color: $fontColorn3;
+    }
+    color: $fontColorn3;
+    img:hover{
+      border: 2px solid;
+      border-radius: 25px;
+      border-color: $fontColorn3;
+    }
+  }
+  
+  #n1, #n2, #n3{
+    div{
+      margin: 10%;
+    }
+  }
+}
+@mixin col($col){
+  @for $i from 1 to 17 {
+    .col#{$col}-#{$i} {width: 6.25% * $i; float: left;}
+  }
+}
+.container1{
+  @media screen and (min-width: 768px) {
+    @include col(g);
+  }
+  
+  @media screen and (min-width: 560px) and (max-width: 768px){
+    @include col(m);
+    .menu{
+      img{
+        width: 0%;
+      }
+    }
+  }
+  
+  @media screen and (max-width: 560px) {
+    @include col(p);
+    .menu{
+      h1{
+        display: none;
+      }
+    }
+    .destaque{
+      margin: 0%;
+      h1{
+        display: none;
+      }
+      img{
+        width: 100%;
+      }
+    }
+  }
+}
+.container2, .container3, .container4{
+  @media screen and (min-width: 768px){
+    @include col(m);
+    .menu{
+      img{
+        width: 0%;
+      }
+    }
+    .titulo{
+    width: 100%;
+    h1{
+      text-align: center;
+    }
+  }
+  .imagem{
+    img{
+      margin: 2.5%;
+      float: left;
+      width: 60%;
+    }
+    h1{
+      float: left;
+      width: 20%;
+    }
+    padding-left: 20%;
+  }
+  }
+  
+  @media screen and (max-width: 768px) {
+    @include col(p);
+    .menu{
+      h1{
+        display: none;
+      }
+    }
+  }
+}
+
+.container2{
+  color: $fontColorn1;
+}
+.container3{
+  color: $fontColorn2;
+}
+.container4{
+  color: $fontColorn3;
+}

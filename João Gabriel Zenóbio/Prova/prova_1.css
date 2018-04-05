@@ -1,0 +1,495 @@
+body {
+    font-size: 100%;
+    overflow-x: hidden;
+  }
+  
+  p {
+    text-align: justify;
+  }
+  
+  h1 {
+    text-align: center;
+  }
+  
+  img, embed, object, video {
+    max-width: 100%;
+  }
+  
+  .clearfix:after {
+    content: "";
+    clear: both;
+    display: table;
+  }
+  
+  .offset {
+    padding-left: 2%;
+  }
+  
+  .menu {
+    position: fixed;
+    background-color: gray;
+    margin: 5%;
+    padding: 5%;
+    top: 0;
+    display: block;
+  }
+  .menu a:link, .menu a:hover, .menu a:visited, .menu a:active {
+    color: black;
+  }
+  .menu h3:hover {
+    transform: scale(1.1);
+  }
+  .menu img, .menu h1 {
+    float: left;
+  }
+  .menu h3 {
+    float: right;
+    width: 16.66666667%;
+  }
+  .menu h1 {
+    text-align: center;
+  }
+  
+  .container1 .destaque {
+    margin: 5%;
+  }
+  .container1 .destaque img {
+    width: 60%;
+    float: left;
+  }
+  .container1 .destaque h1 {
+    width: 40%;
+    float: right;
+  }
+  .container1 .noticias img {
+    width: 30%;
+    float: left;
+    padding: 5%;
+  }
+  .container1 .noticias h1 {
+    float: left;
+    width: 55%;
+  }
+  .container1 .noticias img:hover, .container1 .destaque img:hover {
+    transform: scale(1.2);
+  }
+  .container1 #n1 {
+    color: #8AC007;
+  }
+  .container1 #n1 a:link, .container1 #n1 a:hover, .container1 #n1 a:visited, .container1 #n1 a:active {
+    color: #8AC007;
+  }
+  .container1 #n1 img:hover {
+    border: 2px solid;
+    border-radius: 25px;
+    border-color: #8AC007;
+  }
+  .container1 #n2 {
+    color: #b51110;
+  }
+  .container1 #n2 a:link, .container1 #n2 a:hover, .container1 #n2 a:visited, .container1 #n2 a:active {
+    color: #b51110;
+  }
+  .container1 #n2 img:hover {
+    border: 2px solid;
+    border-radius: 25px;
+    border-color: #b51110;
+  }
+  .container1 #n3 {
+    color: #2a3744;
+  }
+  .container1 #n3 a:link, .container1 #n3 a:hover, .container1 #n3 a:visited, .container1 #n3 a:active {
+    color: #2a3744;
+  }
+  .container1 #n3 img:hover {
+    border: 2px solid;
+    border-radius: 25px;
+    border-color: #2a3744;
+  }
+  .container1 #n1 div, .container1 #n2 div, .container1 #n3 div {
+    margin: 10%;
+  }
+  
+  @media screen and (min-width: 768px) {
+    .container1 .colg-1 {
+      width: 6.25%;
+      float: left;
+    }
+    .container1 .colg-2 {
+      width: 12.5%;
+      float: left;
+    }
+    .container1 .colg-3 {
+      width: 18.75%;
+      float: left;
+    }
+    .container1 .colg-4 {
+      width: 25%;
+      float: left;
+    }
+    .container1 .colg-5 {
+      width: 31.25%;
+      float: left;
+    }
+    .container1 .colg-6 {
+      width: 37.5%;
+      float: left;
+    }
+    .container1 .colg-7 {
+      width: 43.75%;
+      float: left;
+    }
+    .container1 .colg-8 {
+      width: 50%;
+      float: left;
+    }
+    .container1 .colg-9 {
+      width: 56.25%;
+      float: left;
+    }
+    .container1 .colg-10 {
+      width: 62.5%;
+      float: left;
+    }
+    .container1 .colg-11 {
+      width: 68.75%;
+      float: left;
+    }
+    .container1 .colg-12 {
+      width: 75%;
+      float: left;
+    }
+    .container1 .colg-13 {
+      width: 81.25%;
+      float: left;
+    }
+    .container1 .colg-14 {
+      width: 87.5%;
+      float: left;
+    }
+    .container1 .colg-15 {
+      width: 93.75%;
+      float: left;
+    }
+    .container1 .colg-16 {
+      width: 100%;
+      float: left;
+    }
+  }
+  @media screen and (min-width: 560px) and (max-width: 768px) {
+    .container1 .colm-1 {
+      width: 6.25%;
+      float: left;
+    }
+    .container1 .colm-2 {
+      width: 12.5%;
+      float: left;
+    }
+    .container1 .colm-3 {
+      width: 18.75%;
+      float: left;
+    }
+    .container1 .colm-4 {
+      width: 25%;
+      float: left;
+    }
+    .container1 .colm-5 {
+      width: 31.25%;
+      float: left;
+    }
+    .container1 .colm-6 {
+      width: 37.5%;
+      float: left;
+    }
+    .container1 .colm-7 {
+      width: 43.75%;
+      float: left;
+    }
+    .container1 .colm-8 {
+      width: 50%;
+      float: left;
+    }
+    .container1 .colm-9 {
+      width: 56.25%;
+      float: left;
+    }
+    .container1 .colm-10 {
+      width: 62.5%;
+      float: left;
+    }
+    .container1 .colm-11 {
+      width: 68.75%;
+      float: left;
+    }
+    .container1 .colm-12 {
+      width: 75%;
+      float: left;
+    }
+    .container1 .colm-13 {
+      width: 81.25%;
+      float: left;
+    }
+    .container1 .colm-14 {
+      width: 87.5%;
+      float: left;
+    }
+    .container1 .colm-15 {
+      width: 93.75%;
+      float: left;
+    }
+    .container1 .colm-16 {
+      width: 100%;
+      float: left;
+    }
+    .container1 .menu img {
+      width: 0%;
+    }
+  }
+  @media screen and (max-width: 560px) {
+    .container1 .colp-1 {
+      width: 6.25%;
+      float: left;
+    }
+    .container1 .colp-2 {
+      width: 12.5%;
+      float: left;
+    }
+    .container1 .colp-3 {
+      width: 18.75%;
+      float: left;
+    }
+    .container1 .colp-4 {
+      width: 25%;
+      float: left;
+    }
+    .container1 .colp-5 {
+      width: 31.25%;
+      float: left;
+    }
+    .container1 .colp-6 {
+      width: 37.5%;
+      float: left;
+    }
+    .container1 .colp-7 {
+      width: 43.75%;
+      float: left;
+    }
+    .container1 .colp-8 {
+      width: 50%;
+      float: left;
+    }
+    .container1 .colp-9 {
+      width: 56.25%;
+      float: left;
+    }
+    .container1 .colp-10 {
+      width: 62.5%;
+      float: left;
+    }
+    .container1 .colp-11 {
+      width: 68.75%;
+      float: left;
+    }
+    .container1 .colp-12 {
+      width: 75%;
+      float: left;
+    }
+    .container1 .colp-13 {
+      width: 81.25%;
+      float: left;
+    }
+    .container1 .colp-14 {
+      width: 87.5%;
+      float: left;
+    }
+    .container1 .colp-15 {
+      width: 93.75%;
+      float: left;
+    }
+    .container1 .colp-16 {
+      width: 100%;
+      float: left;
+    }
+    .container1 .menu h1 {
+      display: none;
+    }
+    .container1 .destaque {
+      margin: 0%;
+    }
+    .container1 .destaque h1 {
+      display: none;
+    }
+    .container1 .destaque img {
+      width: 100%;
+    }
+  }
+  
+  @media screen and (min-width: 768px) {
+    .container2 .colm-1, .container3 .colm-1, .container4 .colm-1 {
+      width: 6.25%;
+      float: left;
+    }
+    .container2 .colm-2, .container3 .colm-2, .container4 .colm-2 {
+      width: 12.5%;
+      float: left;
+    }
+    .container2 .colm-3, .container3 .colm-3, .container4 .colm-3 {
+      width: 18.75%;
+      float: left;
+    }
+    .container2 .colm-4, .container3 .colm-4, .container4 .colm-4 {
+      width: 25%;
+      float: left;
+    }
+    .container2 .colm-5, .container3 .colm-5, .container4 .colm-5 {
+      width: 31.25%;
+      float: left;
+    }
+    .container2 .colm-6, .container3 .colm-6, .container4 .colm-6 {
+      width: 37.5%;
+      float: left;
+    }
+    .container2 .colm-7, .container3 .colm-7, .container4 .colm-7 {
+      width: 43.75%;
+      float: left;
+    }
+    .container2 .colm-8, .container3 .colm-8, .container4 .colm-8 {
+      width: 50%;
+      float: left;
+    }
+    .container2 .colm-9, .container3 .colm-9, .container4 .colm-9 {
+      width: 56.25%;
+      float: left;
+    }
+    .container2 .colm-10, .container3 .colm-10, .container4 .colm-10 {
+      width: 62.5%;
+      float: left;
+    }
+    .container2 .colm-11, .container3 .colm-11, .container4 .colm-11 {
+      width: 68.75%;
+      float: left;
+    }
+    .container2 .colm-12, .container3 .colm-12, .container4 .colm-12 {
+      width: 75%;
+      float: left;
+    }
+    .container2 .colm-13, .container3 .colm-13, .container4 .colm-13 {
+      width: 81.25%;
+      float: left;
+    }
+    .container2 .colm-14, .container3 .colm-14, .container4 .colm-14 {
+      width: 87.5%;
+      float: left;
+    }
+    .container2 .colm-15, .container3 .colm-15, .container4 .colm-15 {
+      width: 93.75%;
+      float: left;
+    }
+    .container2 .colm-16, .container3 .colm-16, .container4 .colm-16 {
+      width: 100%;
+      float: left;
+    }
+    .container2 .menu img, .container3 .menu img, .container4 .menu img {
+      width: 0%;
+    }
+    .container2 .titulo, .container3 .titulo, .container4 .titulo {
+      width: 100%;
+    }
+    .container2 .titulo h1, .container3 .titulo h1, .container4 .titulo h1 {
+      text-align: center;
+    }
+    .container2 .imagem, .container3 .imagem, .container4 .imagem {
+      padding-left: 20%;
+    }
+    .container2 .imagem img, .container3 .imagem img, .container4 .imagem img {
+      margin: 2.5%;
+      float: left;
+      width: 60%;
+    }
+    .container2 .imagem h1, .container3 .imagem h1, .container4 .imagem h1 {
+      float: left;
+      width: 20%;
+    }
+  }
+  @media screen and (max-width: 768px) {
+    .container2 .colp-1, .container3 .colp-1, .container4 .colp-1 {
+      width: 6.25%;
+      float: left;
+    }
+    .container2 .colp-2, .container3 .colp-2, .container4 .colp-2 {
+      width: 12.5%;
+      float: left;
+    }
+    .container2 .colp-3, .container3 .colp-3, .container4 .colp-3 {
+      width: 18.75%;
+      float: left;
+    }
+    .container2 .colp-4, .container3 .colp-4, .container4 .colp-4 {
+      width: 25%;
+      float: left;
+    }
+    .container2 .colp-5, .container3 .colp-5, .container4 .colp-5 {
+      width: 31.25%;
+      float: left;
+    }
+    .container2 .colp-6, .container3 .colp-6, .container4 .colp-6 {
+      width: 37.5%;
+      float: left;
+    }
+    .container2 .colp-7, .container3 .colp-7, .container4 .colp-7 {
+      width: 43.75%;
+      float: left;
+    }
+    .container2 .colp-8, .container3 .colp-8, .container4 .colp-8 {
+      width: 50%;
+      float: left;
+    }
+    .container2 .colp-9, .container3 .colp-9, .container4 .colp-9 {
+      width: 56.25%;
+      float: left;
+    }
+    .container2 .colp-10, .container3 .colp-10, .container4 .colp-10 {
+      width: 62.5%;
+      float: left;
+    }
+    .container2 .colp-11, .container3 .colp-11, .container4 .colp-11 {
+      width: 68.75%;
+      float: left;
+    }
+    .container2 .colp-12, .container3 .colp-12, .container4 .colp-12 {
+      width: 75%;
+      float: left;
+    }
+    .container2 .colp-13, .container3 .colp-13, .container4 .colp-13 {
+      width: 81.25%;
+      float: left;
+    }
+    .container2 .colp-14, .container3 .colp-14, .container4 .colp-14 {
+      width: 87.5%;
+      float: left;
+    }
+    .container2 .colp-15, .container3 .colp-15, .container4 .colp-15 {
+      width: 93.75%;
+      float: left;
+    }
+    .container2 .colp-16, .container3 .colp-16, .container4 .colp-16 {
+      width: 100%;
+      float: left;
+    }
+    .container2 .menu h1, .container3 .menu h1, .container4 .menu h1 {
+      display: none;
+    }
+  }
+  
+  .container2 {
+    color: #8AC007;
+  }
+  
+  .container3 {
+    color: #b51110;
+  }
+  
+  .container4 {
+    color: #2a3744;
+  }
+  
