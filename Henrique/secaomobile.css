@@ -1,0 +1,75 @@
+body{
+    color: #b51110;
+}
+
+#menu{
+    height: 15px;
+    background-color: aqua;
+    padding-bottom: 2%;
+}
+
+#headtitle{
+    margin-left: 0%;
+    margin-right: 15%;
+    color: black;
+    display: inline;
+}
+
+#maintitle{
+    font-size: 470%;
+    text-align: center;
+}
+
+#principalimg{
+    padding-left: 15%;
+    padding-top: 2%;
+    height: 75%;
+    width: 75%;
+}
+
+
+#principaltext{
+    margin-top: 6%;
+    margin-bottom: 10%;
+}
+
+a{
+    font-size: 180%;
+    margin-left: 2%;
+}
+
+web{
+    color: #8AC007;
+}
+
+.mobile{
+    color: #b51110;
+}
+
+.elearning{
+    color: #2a3744;
+}
+
+
+.col_1, .col_2, .col_3, .col_4, .col_5, .col_6, .col_7, .col_8, .col_9, .col_10, .col_11, .col_12, .col_13, .col_14, col_15, col_16 {
+    float: left;
+    padding: 1%;
+}
+
+.col_4{
+    width: 19%;
+}
+
+.col_11{
+    width: 69%;
+}
+
+.col_16{
+    width: 100%;
+    display: block;
+}
+
+.offset_1, .offset_2, .offset_3, .offset_4, .offset_5, .offset_6, .offset_7, .offset_8, .offset_9, .offset_10, .offset_11, .offset_12, .offset_13, .offset_14, .offset_15, .offset_16{
+    float: left;
+    padding: 1%;
+}
