@@ -1,0 +1,68 @@
+img, embed, object, video {
+    max-width: 100%; 
+  }
+
+.web {
+    color: #8AC007;
+}
+.mobi {
+    color:  #b51110;
+}
+.el {
+    color: #5095da;
+}
+
+#main{
+    position: fixed; top: 0; left:0;
+}
+
+.img_destaque{
+    float: left;
+    border-radius: 5%;
+}
+
+.titulo_destaque{
+    padding-top: 9%;
+    padding-left: 250%;
+}
+
+.container {
+    width: 98%;
+    margin: auto;
+    text-align: center;
+}
+
+h1 {
+    float: left;
+    padding-right: 25%;
+    font-family: 'Mouse Memoirs', sans-serif;
+}
+
+h1+h1 {
+    padding-right: 5%;
+}
+
+h2{
+    font-family: 'Courier New', Courier, monospace;
+}
+
+.icon{
+    max-width: 40px; max-height: 40px;
+    float: left;
+    padding-top: 1%;
+    padding-right: 1%;
+}
+
+.mcon{
+    max-width: 40px; max-height: 40px;
+    padding-top: 50%;
+}
+
+.notice{
+margin-left: 15%;
+}
+
+coll{
+padding-left: 50%;
+}
+
