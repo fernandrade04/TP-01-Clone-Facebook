@@ -1,0 +1,124 @@
+.col_1, .col_2, .col_3, .col_3, .col_4, .col_5, .col_6, .col_7, .col_8, .col_9, .col_10 , .col_11, .col_12 , .col_13, .col_14 , .col_15, .col_16{
+    padding: 1%;  
+    float: left;  
+    }
+
+   @media screen and (min-width: 1200px) {
+    .col_1 {
+        width: 4.25%;
+       }
+        .col_2 {
+        width: 10,5%;
+       }
+       .col_3{
+        width: 16,75%;             
+       }
+       .col_4{
+        width: 23%;                      
+       }
+       .col_5{
+        width: 29,25%;       
+       }
+       .col_6{
+        width: 35,5%;           
+       }
+       .col_7{
+        width: 41,75%;         
+       }
+       .col_8{
+        width: 48%;
+       }
+       .col_9{
+        width: 54,25%;
+       }
+       .col_10{
+        width: 60,5%;
+       }
+       .col_11{
+        width: 73%;
+       }
+       .col_12{
+        width: 79,25%;
+       }
+       .col_13{
+        width: 79,25%;
+       }
+       .col_14{
+        width:    85,5%;
+       }
+       .col_15{
+        width:   91,75%;
+       }
+       .col_16{
+        width: 98%;
+       }
+}
+
+@media screen and (min-width: 768px) {
+
+        .s-col_1 {
+        width: 4.25%;
+       }
+        .s-col_2 {
+        width: 10,5%;
+       }
+       .s-col_3{
+        width: 16,75%;             
+       }
+       .s-col_4{
+        width: 23%;                      
+       }
+       .s-col_5{
+        width: 29,25%;       
+       }
+       .s-col_6{
+        width: 35,5%;           
+       }
+       .s-col_7{
+        width: 41,75%;         
+       }
+       .s-col_8{
+        width: 48%;
+       }
+       .s-col_9{
+        width: 54,25%;
+       }
+       .s-col_10{
+        width: 60,5%;
+       }
+       .s-col_11{
+        width: 73%;
+       }
+       .s-col_12{
+        width: 79,25%;
+       }
+       .s-col_13{
+        width: 79,25%;
+       }
+       .s-col_14{
+        width: 85,5%;
+       }
+       .s-col_15{
+        width: 91,75%;
+       }
+       .s-col_16{
+        width: 98%;
+       }
+
+
+}
+
+@media screen and (min-width: 560px) {
+
+    .m-col_15 {
+        width: 91,75%;
+    }
+
+    .m-col_16 {
+        width: 98%;
+    }
+
+
+
+
+}
