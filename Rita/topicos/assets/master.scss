@@ -1,0 +1,51 @@
+$numCol: 16;
+
+
+.text{
+	text-align: center;
+}
+
+
+.line{
+    margin-top: 60px;
+}
+
+.img{
+	max-width: 60%;
+	max-height: 60%;
+}
+.noticia{
+	display: block;
+}
+
+
+
+
+@mixin multiple_column_size($size) {
+	@for $i from 1 to $numCol + 1 {
+		.col-#{$size}-#{$i} {
+            width: (($i/$numCol *100)* 1%);
+			float: left;
+        }
+        .offset-#{$size}-#{$i} {
+            padding-left: (($i/$numCol *100)* 1%);
+        }
+
+	}
+    .col-#{$size}-0{
+        display: none;
+    }
+}
+
+
+/* DESKTOP */
+@media screen and (min-width: 768px) {
+	@include multiple_column_size(g);
+
+}
+
+/* SMARTPHONE */
+@media screen and (max-width: 767px) {
+	@include multiple_column_size(p);
+
+}
